@@ -1,0 +1,21 @@
+$sprite-map: (
+{{#each sprites}}
+{{map}},
+{{/each}}
+);
+
+@mixin sprite-image($image-name, $image-group-name) {
+  $icon-sprite-map: map-get($sprite-map, sp_#{$image-group-name});
+  $icon-map: map-get($icon-sprite-map, images);
+  $image-map: map-get($icon-map, #{$image-name});
+
+  $size: map-get($icon-sprite-map, width) map-get($icon-sprite-map, height);
+  $width: map-get($image-map, width);
+  $height: map-get($image-map, height);
+  $url: map-get($icon-sprite-map, url);
+  $offset: map-get($image-map, offset_x) map-get($image-map, offset_y);
+  
+  width: $width;
+  height: $height;
+  background: transparent $url $offset/$size;
+}

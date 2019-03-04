@@ -1,0 +1,17 @@
+@import "./sp/sp_mixin.scss";
+
+$color-bg: #f2f2f2;
+$color-theme: #416399;
+
+.outer {
+  background-color: $color-bg;
+  .inner {
+    color: $color-theme;
+    &:before {
+      @include sprite-image("arrow_left_15x15_black", "png_icon");
+
+      display: inline-block;
+      content: '';
+    }
+  }
+}

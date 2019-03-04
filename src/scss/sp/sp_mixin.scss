@@ -1,0 +1,86 @@
+$sprite-map: (
+sp_png_icon: (
+  width: 32px,
+  height: 32px,
+  url: url(../img/sp/sp_png_icon.png),
+  images: (
+    arrow_down_16x16_black: (
+      offset_x: 0px,
+      offset_y: 0px,
+      width: 16px,
+      height: 16px
+    ),
+    arrow_left_15x15_black: (
+      offset_x: -16px,
+      offset_y: -16px,
+      width: 15px,
+      height: 15px
+    ),
+    arrow_right_16x16_black: (
+      offset_x: -16px,
+      offset_y: 0px,
+      width: 16px,
+      height: 16px
+    ),
+    arrow_up_16x16_black: (
+      offset_x: 0px,
+      offset_y: -16px,
+      width: 16px,
+      height: 16px
+    ),
+  )
+)
+
+
+,
+sp_png_icon_two: (
+  width: 32px,
+  height: 32px,
+  url: url(../img/sp/sp_png_icon_two.png),
+  images: (
+    arrow_down_16x16_black_two: (
+      offset_x: 0px,
+      offset_y: 0px,
+      width: 16px,
+      height: 16px
+    ),
+    arrow_left_15x15_black_two: (
+      offset_x: -16px,
+      offset_y: -16px,
+      width: 15px,
+      height: 15px
+    ),
+    arrow_right_16x16_black_two: (
+      offset_x: -16px,
+      offset_y: 0px,
+      width: 16px,
+      height: 16px
+    ),
+    arrow_up_16x16_black_two: (
+      offset_x: 0px,
+      offset_y: -16px,
+      width: 16px,
+      height: 16px
+    ),
+  )
+)
+
+
+,
+);
+
+@mixin sprite-image($image-name, $image-group-name) {
+  $icon-sprite-map: map-get($sprite-map, sp_#{$image-group-name});
+  $icon-map: map-get($icon-sprite-map, images);
+  $image-map: map-get($icon-map, #{$image-name});
+
+  $size: map-get($icon-sprite-map, width) map-get($icon-sprite-map, height);
+  $width: map-get($image-map, width);
+  $height: map-get($image-map, height);
+  $url: map-get($icon-sprite-map, url);
+  $offset: map-get($image-map, offset_x) map-get($image-map, offset_y);
+  
+  width: $width;
+  height: $height;
+  background: transparent $url $offset/$size;
+}
