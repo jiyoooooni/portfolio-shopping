@@ -7,8 +7,29 @@ label, button, [type=button], [type=submit], [type=reset], a {cursor: pointer;}
 img {display: block;}
 
 .inner {display: block; position: relative; margin: auto; width: 1280px; height: 100%;}
+.clearfix:after {content: ""; display: block; clear: both;}
 
-header {}
+header {height: 100%;}
 header .hd_top {position: relative; height: 36px; background: url(../img/bg_gheader.dfb78f0a.jpg) no-repeat 100% 0;}
+header .hd_top a {display: block; width: 100%; height: 100%;}
+header .hd_top .naver {float: left; margin-top: 11px; width: 48px; height: 13px; background-image: url(../img/spSv_global.png); background-size: 423px 400px; background-position: -358px -234px;}
+header .hd_top .naverpay {float: left; margin: 11px 0 0 20px; width: 67px; height: 13px; background-image: url(../img/spSv_global.png); background-size: 423px 400px; background-position: -77px -253px;}
+header .hd_top .gnb_right {float: right; padding-top: 8px;}
+header .hd_top .gnb_right .login {float: left;}
+header .hd_top .gnb_right .login a {display: block; width: 45px; height: 20px; color: #fff; font-size: 12px; text-align: center; border: 1px solid rgba(0,0,0,0.1);}
+header .hd_top .gnb_right .service {float: left; margin: 1px 0 0 15px; width: 18px; height: 18px; background-image: url(../img/sp_gnb_v14.png); background-position: -261px -120px;}
 header .hd_top:after {content: ""; position: absolute; bottom: 0; width: 100%; height: 1px; background-color: rgba(0,0,0,0.1)}
 header .hd_mid {height: 66px; background: url(../img/bg_gheader.dfb78f0a.jpg) no-repeat 100% 0;}
+header .hd_mid .logo {float: left; padding-top: 18px; margin-right: 18px;}
+header .hd_mid .logo a {display: block; width: 68px; height: 28px; background-image: url(../img/spSv_global.png); background-size: 423px 400px; background-position: 0 -183px;}
+header .hd_mid form {float: left; padding-top: 16px;}
+header .hd_mid fieldset { width: 430px; height: 34px; background-color: olive;}
+header .hd_mid .category {padding-top: 20px;}
+header .hd_mid .category button {background-image: url(../img/spSv_global.png); background-size: 423px 400px; }
+header .hd_mid .category .cate_digital {width: 97px; height: 26px;background-position: -101px -123px;}
+header .hd_mid .category .cate_kids {margin-left: 7px; width: 69px; height: 26px; background-position: -72px -183px;}
+header .hd_mid .category .cate_more {margin-left: 10px; width: 114px; height: 26px; background-position: -118px -93px;}
+header .hd_mid .btn a {display: inline-block; width: 60px; height: 14px; color: transparent; background-image: url(../img/spSv_global.png); background-size: 423px 400px; background-position: -292px -238px;}
+header .hd_mid span {display: inline-block; width: 1px; height: 12px; background-position: -413px -170px;}
+header .hd_mid .btn .allmall {background-position: -292px -166px;}
+header .hd_mid .btn .shoppingmy {width: 90px; background-position: -1px -160px;}
