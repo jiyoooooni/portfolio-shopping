@@ -105,7 +105,7 @@ function buildCssTask () {
 }
 
 function buildImageTask () {
-  return gulp.src(paths.src_img('./**/*.png')).pipe(gulp.dest(paths.dist_img()));
+  return gulp.src([paths.src_img('./**/*.png'), paths.src_img('./**/*.jpg')]).pipe(gulp.dest(paths.dist_img()));
 }
 
 /**
