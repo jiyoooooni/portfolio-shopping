@@ -36,8 +36,10 @@ const config = {
   },
   browserSync: {
     server: {
-      baseDir: paths.src_html()
-    }
+      baseDir: paths.src_html(),
+      directory: true
+    },
+    open: 'external'
   }
 };
 
