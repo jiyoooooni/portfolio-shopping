@@ -59,6 +59,10 @@ img {
   clear: both;
 }
 
+body, html {
+  position: relative;
+}
+
 .hd_top {
   position: relative;
   height: 36px;

@@ -1,8 +1,10 @@
 @import "./sp/sp_mixin.scss";
-@import "./reset.scss";
+@import "./common/reset.scss";
 .inner {display: block; position: relative; margin: auto; width: 1280px; height: 100%;}
 .clearfix:after {content: ""; display: block; clear: both;}
-
+ body,html {
+   position: relative;
+ }
  .hd_top {
    position: relative; 
    height: 36px; 
