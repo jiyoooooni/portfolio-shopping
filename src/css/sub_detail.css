@@ -422,6 +422,14 @@ img {
   background-position: -214px -36px;
 }
 
+.content .content_inner {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 1020px;
+  height: 100%;
+}
+
 .content .content_header {
   overflow: hidden;
   border-bottom: 2px solid #000;
@@ -822,6 +830,327 @@ img {
 
 .content .content_product .event a img {
   width: 1018px;
+}
+
+.content .content_information {
+  font-size: 13px;
+}
+
+.content .content_information nav .nav_wrap {
+  font-size: 0;
+  border-bottom: 1px solid #000;
+}
+
+.content .content_information nav .nav_list {
+  position: relative;
+  display: inline-block;
+  width: 255px;
+  height: 45px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 45px;
+  background-color: #f3f5f7;
+}
+
+.content .content_information nav .nav_list a {
+  display: block;
+}
+
+.content .content_information nav li + li:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 1px;
+  height: 20px;
+  background-color: #ddd;
+}
+
+.content .content_information .titlebx {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000;
+}
+
+.content .content_information .titlebx .title {
+  font-size: 25px;
+}
+
+.content .content_information .titlebx p {
+  padding: 20px 0 0;
+  color: #888;
+}
+
+.content .content_information .titlebx p a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.content .content_information .titlebx p span .point {
+  position: relative;
+  margin-right: 20px;
+  color: #8ABB6D;
+  line-height: 30px;
+}
+
+.content .content_information .titlebx p span .line:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: -10px;
+  width: 1px;
+  height: 10px;
+  background-color: #888;
+}
+
+.content .content_information table {
+  margin-top: 15px;
+  border-spacing: 0;
+  border-bottom: 1px solid #ededed;
+}
+
+.content .content_information table tr th {
+  padding: 0 20px;
+  width: 160px;
+  height: 40px;
+  color: #333;
+  font-weight: normal;
+  text-align: left;
+  border-top: 1px solid #ededed;
+  background-color: #fafafa;
+}
+
+.content .content_information table tr td {
+  padding: 0 20px;
+  width: 350px;
+  color: #6e6e6e;
+  border-top: 1px solid #ededed;
+}
+
+.content .content_information .table_title {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.content .content_information .detail {
+  padding: 20px 0;
+}
+
+.content .content_information .detail p {
+  margin-top: 15px;
+  color: #6e6e6e;
+  text-align: right;
+}
+
+.content .content_information .detail p a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.content .content_information .detail p:before {
+  content: "!";
+  display: inline-block;
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+
+.content .content_information .detail .col2 td {
+  width: 860px;
+}
+
+.content .content_information .detail .col2_long th {
+  width: 345px;
+}
+
+.content .content_information .detail .col2_long td {
+  width: 675px;
+}
+
+.content .content_information .review {
+  padding-top: 50px;
+}
+
+.content .content_information .qna {
+  padding: 50px 0;
+}
+
+.content .content_information .qna .buttonarea {
+  overflow: hidden;
+  padding: 15px 0 0;
+  font-size: 0;
+}
+
+.content .content_information .qna .buttonarea button {
+  display: inline-block;
+  padding: 10px 17px;
+  font-size: 13px;
+  color: #fff;
+  background-color: #888;
+}
+
+.content .content_information .qna .buttonarea .left {
+  background-color: #333;
+  margin-right: 5px;
+}
+
+.content .content_information .qna .buttonarea .rightbx {
+  float: right;
+}
+
+.content .content_information .qna .buttonarea .rightbx .text {
+  margin-right: 25px;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.content .content_information .qna .buttonarea .rightbx .on_off {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #999;
+  border-radius: 10px;
+}
+
+.content .content_information .qna .buttonarea .rightbx .on_off span {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 8px;
+  color: #fff;
+}
+
+.content .content_information .qna .buttonarea .rightbx .on_off .circle {
+  position: absolute;
+  top: -3px;
+  left: -10px;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #888;
+}
+
+.content .content_information .qna .buttonarea .filter {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  padding: 10px;
+  width: 90px;
+  height: 35px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  vertical-align: bottom;
+}
+
+.content .content_information .qna .buttonarea .filter .btn {
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 10px;
+  border: 6px solid transparent;
+  border-top-color: #888;
+}
+
+.content .content_information .qna .noticearea ul {
+  font-size: 0;
+}
+
+.content .content_information .qna .noticearea ul li {
+  border-bottom: 1px solid #ddd;
+}
+
+.content .content_information .qna .noticearea ul li .notice {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.content .content_information .qna .noticearea ul li .col1 {
+  width: 92px;
+}
+
+.content .content_information .qna .noticearea ul li .col2 {
+  width: 741px;
+}
+
+.content .content_information .qna .noticearea ul li .col3 {
+  width: 88px;
+}
+
+.content .content_information .qna .noticearea ul li .col4 {
+  width: 99px;
+}
+
+.content .content_information .qna .noticearea ul .head {
+  padding: 17px 0;
+  text-align: center;
+  height: 50px;
+}
+
+.content .content_information .qna .noticearea ul .body {
+  padding: 26px 0;
+  height: 68px;
+  color: #888;
+}
+
+.content .content_information .qna .noticearea ul .body .secret:after {
+  content: "";
+  display: inline-block;
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  vertical-align: bottom;
+}
+
+.content .content_information .qna .pagenum {
+  margin: 50px auto 0;
+  width: 34px;
+  height: 34px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+  background-color: #89bb6d;
+}
+
+.content .content_information .return .infobx .head {
+  padding: 25px 0;
+  height: 80px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.content .content_information .return .infobx .head p {
+  margin-top: 5px;
+  color: #8f8f8f;
+}
+
+.content .content_information .return .infobx .table_title {
+  margin-bottom: 15px;
+}
+
+.content .content_information .return .infobx table {
+  margin-top: 0;
+}
+
+.content .content_information .return .infobx table td {
+  color: #222;
+}
+
+.content .content_information .return .infobx table td span {
+  line-height: 2;
+}
+
+.content .content_information .return .infobx table td .point {
+  color: #8f8f8f;
 }
 
 footer {

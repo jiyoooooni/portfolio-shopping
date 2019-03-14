@@ -342,6 +342,13 @@
   }
 }
 .content {
+    .content_inner {
+      display: block;
+      position: relative;
+      margin: auto;
+      width: 1020px;
+      height: 100%;
+    }
     .content_header {
       overflow: hidden;
       border-bottom: 2px solid #000;
@@ -696,6 +703,299 @@
                 }
             }
         }
+    }//.content_product
+    .content_information {
+      font-size: 13px;
+        nav {
+            .nav_wrap {
+              font-size: 0;
+              border-bottom: 1px solid #000;
+            }
+            .nav_list {
+              position: relative;
+              display: inline-block;
+              width: 255px;
+              height: 45px;
+              font-size: 14px;
+              text-align: center;
+              font-weight: bold;
+              line-height: 45px;
+              background-color: #f3f5f7;
+                a {
+                  display: block;
+                }
+            }
+            li+li:before {
+              content: "";
+              position: absolute;
+              top: 12px;
+              left: 0;
+              width: 1px;
+              height: 20px;
+              background-color: #ddd;
+            }
+        }
+        .titlebx {
+          padding-bottom: 15px;;
+          border-bottom: 2px solid #000;
+            .title {
+              font-size: 25px;
+            }
+            p {
+              padding: 20px 0 0;
+              color: #888;
+                a {
+                  color: #000;
+                  text-decoration: underline;
+                }
+                span {
+                    .point{
+                      position: relative;
+                      margin-right: 20px;
+                      color: #8ABB6D;
+                      line-height: 30px;
+                      
+                    }
+                    .line:after {
+                      content: "";
+                      display: block;
+                      position: absolute;
+                      top: 2px;
+                      right: -10px;;
+                      width: 1px;
+                      height: 10px;
+                      background-color: #888;
+                    }
+                }
+            }
+        }
+        table {
+          margin-top: 15px;
+          border-spacing: 0;
+          border-bottom: 1px solid #ededed;
+            tr{
+                th {
+                  padding: 0 20px;
+                  width: 160px;
+                  height: 40px;
+                  color: #333;
+                  font-weight: normal;
+                  text-align: left;
+                  border-top: 1px solid #ededed;
+                  background-color:#fafafa;
+                }
+                td{
+                  padding: 0 20px;
+                  width: 350px;
+                  color: #6e6e6e;
+                  border-top: 1px solid #ededed;
+                }
+            }
+        }
+        .table_title {
+          margin-top: 20px;
+          font-size: 16px;
+        }
+        .detail {
+          padding: 20px 0;
+            p {
+              margin-top: 15px;
+              color: #6e6e6e;
+              text-align: right;
+                a {
+                  color: #000;
+                  text-decoration: underline;
+                }
+            }
+            p:before {
+              content: "!";
+              display: inline-block;
+              margin-right: 5px;
+              width: 15px;
+              height: 15px;
+              text-align: center;
+              border: 1px solid #ddd;
+              border-radius: 50%;
+            }
+            .col2 {
+                td {
+                  width: 860px;
+                }
+            }
+            .col2_long {
+                th {
+                  width: 345px;
+                }
+                td {
+                  width: 675px;
+                }
+            }
+        }
+        .review {
+          padding-top: 50px;
+        }
+        .qna {
+          padding: 50px 0;
+            .buttonarea {
+              overflow: hidden;
+              padding: 15px 0 0;
+              font-size: 0;
+                button {
+                  display: inline-block;
+                  padding: 10px 17px;
+                  font-size: 13px;
+                  color: #fff;
+                  background-color: #888;
+                }
+                .left {
+                  background-color: #333;
+                  margin-right: 5px;
+                }
+
+                .rightbx {
+                  float: right;
+                    .text {
+                      margin-right: 25px;
+                      font-size: 13px;
+                      line-height: 30px;
+                    }
+                    .on_off {
+                      display: inline-block;
+                      position: relative;
+                      width: 40px;
+                      height: 20px;
+                      background-color: #999;
+                      border-radius: 10px;
+                        span {
+                          display: inline-block;
+                          position: absolute;
+                          right: 5px;;
+                          top: 5px;
+                          font-size: 8px;
+                          color :#fff;
+                        }
+                        .circle {
+                          position: absolute;
+                          top: -3px;
+                          left: -10px;
+                          width: 25px;
+                          height: 25px;
+                          background-color: #fff;
+                          border-radius: 50%;
+                          border: 1px solid #888;
+                        }
+                    }
+                }
+                .filter {
+                  position: relative;
+                  display: inline-block;
+                  margin-left: 15px;
+                  padding: 10px;
+                  width: 90px;
+                  height: 35px;
+                  font-size: 13px;
+                  border: 1px solid #ddd;
+                  vertical-align: bottom;
+                    .btn {
+                      display: block;
+                      position: absolute;
+                      top: 14px;
+                      right: 10px;
+                      border: 6px solid transparent;
+                      border-top-color: #888;
+                      
+                      
+                    }
+                }
+            }
+            .noticearea {
+                ul {
+                  font-size: 0;
+                    li {
+                      border-bottom: 1px solid #ddd;
+                        .notice {
+                          display: inline-block;
+                          font-size: 13px;
+                        }
+                        .col1 {
+                          width: 92px;
+                        }
+                        .col2 {
+                          width: 741px;
+                        }
+                        .col3 {
+                          width: 88px;
+                        }
+                        .col4 {
+                          width: 99px;
+                        }
+                    }
+                    .head {
+                      padding: 17px 0;
+                      text-align: center;
+                      height: 50px;
+                    }
+                    .body {
+                      padding: 26px 0;
+                      height: 68px;
+                      color: #888;
+                        .secret:after {
+                          content: "";
+                          display: inline-block;
+                          margin-left: 5px;
+                          width: 20px;
+                          height: 20px;
+                          background-color: red;
+                          vertical-align: bottom;
+
+                        }
+
+                    }
+                }
+            }
+            .pagenum {
+              margin: 50px auto 0;
+              width: 34px;
+              height: 34px;
+              color: #fff;
+              font-weight: bold;
+              text-align: center;
+              line-height: 34px;
+              cursor: pointer;
+              background-color: #89bb6d;
+                
+            }
+        }
+        .return {
+            .infobx {
+                .head {
+                  padding: 25px 0;
+                  height: 80px;
+                  text-align: center;
+                  background-color: #fafafa;
+                  p {
+                    margin-top: 5px;
+                    color: #8f8f8f;
+                  }
+                }
+                .table_title {
+                  margin-bottom: 15px;
+                }
+                table {
+                  margin-top: 0;
+                    td {
+                      color: #222;
+                      span {
+                        line-height: 2;
+                      }
+                      .point {
+                        color: #8f8f8f;
+                      }
+                    }
+
+                }
+            }
+        }
     }
 }
 
@@ -761,4 +1061,5 @@ footer {
           background-position: -148px -253px;
         }
     }
+
 }
