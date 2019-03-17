@@ -1,0 +1,28 @@
+@mixin clearfix {
+    &::after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+}
+
+@mixin ellipsis($line) {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @if ($line == 1) {
+        white-space: nowrap;
+    } @else {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+    }
+}
+
+@mixin inner {
+    display: block; 
+    position: relative; 
+    margin: auto; 
+    width: 1280px; 
+    height: 100%;
+}

@@ -1,7 +1,10 @@
+@import "./common/mixin.scss";
 @import "./sp/sp_mixin.scss";
 @import "./common/reset.scss";
-.inner {display: block; position: relative; margin: auto; width: 1280px; height: 100%;}
-.clearfix:after {content: ""; display: block; clear: both;}
+.inner {
+  @include inner
+}
+
  body,html {
    position: relative;
  }
@@ -33,6 +36,7 @@
       background-position: -77px -253px;
       }
     .gnb_right {
+      @include clearfix
       float: right;
       padding-top: 8px;
         .login {
@@ -58,7 +62,7 @@
         }
     }
 }
-.hd_top:after {
+.hd_top::after {
   content: ""; 
   position: absolute; 
   right: 0;
@@ -170,7 +174,7 @@
           margin-left: 27px;
           background-position: -292px -166px;
         }
-        a+a:before {
+        a+a::before {
           content: "";
           position: absolute;
           top: 1px;
@@ -291,7 +295,7 @@
                 width: 27px;
                 background-position: -31px -364px;
               }
-              span:before {
+              span::before {
                 content: "";
                 display: block;
                 position: absolute;
@@ -360,7 +364,7 @@
             font-weight: normal;
             font-size: 14px;
           }
-          a:after {
+          a::after {
             content: "";
             position: absolute;
             display: block;
@@ -376,6 +380,7 @@
       
       .art_wrap {
         text-align: center;
+        font-size: 0;
           .art_list {
             display: inline-block;
             padding: 0 5.5px 30px 5.5px;
@@ -398,13 +403,10 @@
                   }
               }
               .sale {
+                margin-right: 5px;
                 color: red;
                 font-size: 18px;
                 font-weight: bold;
-              }
-              .sale:after {
-                content: "%";
-                font-size: 12px;
               }
               .price {
                 display: inline-block;
@@ -412,9 +414,11 @@
                 font-size: 18px;
               }
               .info {
+                @include ellipsis(2)
                 display: block;
                 margin-top: 10px;
-                padding-bottom: 50px;
+                height: 50px;
+                padding-bottom: 70px;
                 width: 202px;
                 color: #222;
                 font-size: 12px;
@@ -497,6 +501,7 @@
         background-color: #fff;
           ul {
             text-align: center;
+            font-size: 0;
             border-bottom: 1px solid #ddd;
               li {
                 display: inline-block;
@@ -566,126 +571,19 @@
       }
   }//.visual
   .today {
-      .no1 {
-          .thumb {
-              background-image: url(../img/today_artlist_no1.jpg);
+      .thumb {
+        position: relative;
+        overflow: hidden;
+          img {
+            position: absolute;
+            margin: auto;
+            right: -50%;
+            left: -50%;
+            width: auto;
+            height: 100%;
           }
       }
-      .no2 {
-          .thumb {
-              background-image: url(../img/today_artlist_no2.jpg);
-          }
-      }
-      .no3 {
-          .thumb {
-              background-image: url(../img/today_artlist_no3.jpg);
-          }
-      }
-      .no4 {
-          .thumb {
-              background-image: url(../img/today_artlist_no4.jpg);
-          }
-      }
-      .no5 {
-          .thumb {
-              background-image: url(../img/today_artlist_no5.jpg);
-          }
-      }
-      .no6 {
-          .thumb {
-              background-image: url(../img/today_artlist_no6.jpg);
-          }
-      }
-      .no7 {
-          .thumb {
-              background-image: url(../img/today_artlist_no7.jpeg);
-          }
-      }
-      .no8 {
-          .thumb {
-              background-image: url(../img/today_artlist_no8.jpeg);
-          }
-      }
-      .no9 {
-          .thumb {
-              background-image: url(../img/today_artlist_no9.jpg);
-          }
-      }
-      .no10 {
-          .thumb {
-              background-image: url(../img/today_artlist_no10.jpg);
-          }
-      }
-      .no11 {
-          .thumb {
-              background-image: url(../img/today_artlist_no11.jpeg);
-          }
-      }
-      .no12 {
-          .thumb {
-              background-image: url(../img/today_artlist_no12.jpeg);
-          }
-      }
-      .no13 {
-        .thumb {
-            background-image: url(../img/today_artlist_no13.jpg);
-        }
-      }
-      .no14 {
-          .thumb {
-              background-image: url(../img/today_artlist_no14.jpg);
-          }
-      }
-      .no15 {
-          .thumb {
-              background-image: url(../img/today_artlist_no15.jpeg);
-          }
-      }
-      .no16 {
-          .thumb {
-              background-image: url(../img/today_artlist_no16.jpg);
-          }
-      }
-      .no17 {
-          .thumb {
-              background-image: url(../img/today_artlist_no17.jpg);
-          }
-      }
-      .no18 {
-          .thumb {
-              background-image: url(../img/today_artlist_no18.jpg);
-          }
-      }
-      .no19 {
-          .thumb {
-              background-image: url(../img/today_artlist_no19.jpg);
-          }
-      }
-      .no20 {
-          .thumb {
-              background-image: url(../img/today_artlist_no20.jpg);
-          }
-      }
-      .no21 {
-          .thumb {
-              background-image: url(../img/today_artlist_no21.jpg);
-          }
-      }
-      .no22 {
-          .thumb {
-              background-image: url(../img/today_artlist_no22.jpg);
-          }
-      }
-      .no23 {
-          .thumb {
-              background-image: url(../img/today_artlist_no23.jpeg);
-          }
-      }
-      .no24 {
-          .thumb {
-              background-image: url(../img/today_artlist_no24.jpg);
-          }
-      }
+      
   }//.today
 }//.content
 
@@ -701,7 +599,7 @@ footer {
           position: relative;
           margin-left: 10px;
         }
-        a+a:before {
+        a+a::before {
           content: "";
           position: absolute;
           top: 1px;
@@ -724,7 +622,7 @@ footer {
           position: relative;
           margin-left: 10px;
         }
-        .line:before {
+        .line::before {
           content: "";
             position: absolute;
             top: 1px;

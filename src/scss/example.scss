@@ -1,8 +1,10 @@
+@import "./common/mixin.scss";
 @import "./sp/sp_mixin.scss";
 @import "./common/reset.scss";
 
-.inner {display: block; position: relative; margin: auto; width: 1280px; height: 100%;}
-.clearfix:after {content: ""; display: block; clear: both;}
+.inner {
+  @include inner
+}
 
  .hd_top {
    position: relative; 
@@ -32,6 +34,7 @@
       background-position: -77px -253px;
       }
     .gnb_right {
+      @include clearfix
       float: right;
       padding-top: 8px;
         .login {
@@ -57,7 +60,7 @@
         }
     }
 }
-.hd_top:after {
+.hd_top::after {
   content: ""; 
   position: absolute; 
   right: 0;
@@ -169,7 +172,7 @@
           margin-left: 27px;
           background-position: -292px -166px;
         }
-        a+a:before {
+        a+a::before {
           content: "";
           position: absolute;
           top: 1px;
@@ -290,7 +293,7 @@
                 width: 27px;
                 background-position: -31px -364px;
               }
-              span:before {
+              span::before {
                 content: "";
                 display: block;
                 position: absolute;
@@ -352,7 +355,7 @@
         text-align: center;
         font-weight: bold;
       }
-      .section_title:before {
+      .section_title::before {
         content: "";
         display: block;
         position: absolute;
@@ -363,7 +366,7 @@
         transform: skewx(-30deg);
         background-color: #89bb6d;
       }
-      .section_title:after {
+      .section_title::after {
         content: "";
         display: block;
         position: absolute;
@@ -383,7 +386,7 @@
             right: 0;
             padding-right: 25px;
           }
-          a:after {
+          a::after {
             content: "";
             display: block;
             position: absolute;
@@ -408,10 +411,21 @@
                 display: block;
               }
               .thumb {
+                overflow: hidden;
                 position: relative;
                 width: 202px;
                 height: 260px;
                 border: 1px solid #ddd;
+                  img {
+                    position: absolute;
+                    top: -50%;
+                    left: -50%;
+                    bottom: -50%;
+                    right: -50%;
+                    margin: auto;
+                    width: auto;
+                    height: 100%;
+                  }
                   button {
                     position: absolute;
                     right: 10px;
@@ -430,6 +444,7 @@
                 font-weight: bold;
               }
               .info {
+                @include ellipsis(1)
                 display: block;
                 margin-top: 10px;
                 padding-bottom: 50px;
@@ -451,6 +466,7 @@
                       }
                   }
                   span {
+                    @include ellipsis(1)
                     display: block;
                     font-size: 14px;
                     font-weight: bold;
@@ -617,71 +633,7 @@
           }
       }
   }//.visual
-  .today {
-      .no1 {
-          .thumb {
-              background-image: url(../img/artlist_no1.jpg);
-          }
-      }
-      .no2 {
-          .thumb {
-              background-image: url(../img/artlist_no2.jpg);
-          }
-      }
-      .no3 {
-          .thumb {
-              background-image: url(../img/artlist_no3.jpg);
-          }
-      }
-      .no4 {
-          .thumb {
-              background-image: url(../img/artlist_no4.jpg);
-          }
-      }
-      .no5 {
-          .thumb {
-              background-image: url(../img/artlist_no5.jpeg);
-          }
-      }
-      .no6 {
-          .thumb {
-              background-image: url(../img/artlist_no6.jpg);
-          }
-      }
-  }//.today
-  .design {
-      .no1 {
-        .thumb {
-          background-image: url(../img/design_no1.jpeg);
-        }
-      }
-      .no2 {
-        .thumb {
-          background-image: url(../img/design_no2.jpg);
-        }
-      }
-      .no3 {
-        .thumb {
-          background-image: url(../img/design_no3.jpeg);
-        }
-      }
-      .no4 {
-        .thumb {
-          background-image: url(../img/design_no4.jpg);
-        }
-      }
-      .no5 {
-        .thumb {
-          background-image: url(../img/design_no5.jpg);
-        }
-      }
-      .no6 {
-        .thumb {
-          background-image: url(../img/design_no6.jpg);
-        }
-      }
-      
-  }//.design
+  
   .week {
     .list_designer {
       overflow: hidden;
@@ -806,7 +758,7 @@ footer {
           position: relative;
           margin-left: 10px;
         }
-        a+a:before {
+        a+a::before {
           content: "";
           position: absolute;
           top: 1px;
@@ -829,7 +781,7 @@ footer {
           position: relative;
           margin-left: 10px;
         }
-        .line:before {
+        .line::before {
           content: "";
             position: absolute;
             top: 1px;

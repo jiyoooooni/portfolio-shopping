@@ -168,6 +168,37 @@
     </div><!-- .hd_btm -->
   </header>
   <div class="content">
+    <div class="content_fix">
+      <div class="content_inner">
+        <div class="fix_wrap">
+          <div class="thumb">
+            <span class="blind">꽃잔치, 이수동 이미지</span>
+          </div>
+          <div class="info">
+            <strong>꽃잔치, 이수동<br/><strong class="point">800,000원</strong></strong>
+          </div>
+          <button type="button">
+            <span>구매하기</span>
+          </button>
+        </div>
+        <div class="tab_nav">
+            <ul class="nav_wrap">
+              <li class="nav_list">
+                <a href="#">상세정보</a>
+              </li>
+              <li class="nav_list">
+                <a href="#">리뷰 0</a>
+              </li>
+              <li class="nav_list">
+                <a href="#">Q&A 0</a>
+              </li>
+              <li class="nav_list">
+                <a href="#">반품/교환정보</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
     <div class="inner">
       <div class="content_header">
         <div class="content_header_category">
@@ -233,7 +264,7 @@
                 </strong>
               </div>
               <div class="delivery">
-                <div class="selectbx">다른 배송방법 선택하기</div>
+                <button class="selectbx">다른 배송방법 선택하기</button>
                 <p>
                   <span>택배배송<strong>20,000</strong>원</span>
                   <span class="point">(주문시 결제)</span>
@@ -243,7 +274,7 @@
                 </p>
               </div>
               <div class="option">
-                  <div class="selectbx">액자</div>
+                  <button class="selectbx">액자</button>
               </div>
               <div class="total">
                 <strong>총 상품 금액<a href="#" class="help">?</a></strong>
@@ -263,7 +294,7 @@
                 </div>
               </div>
               <div class="info">
-                <span>쇼핑할 때 필독<strong class="point">안전거래TIP</strong></span>
+                <span>쇼핑할 때 필독<a class="point">안전거래TIP</a></span>
               </div>
               <div class="pointbx">
                 <a>
@@ -290,7 +321,7 @@
         </div>
       </div>
       <div class="content_information">
-        <nav>
+        <div class="tab_nav">
           <ul class="nav_wrap">
             <li class="nav_list">
               <a href="#">상세정보</a>
@@ -305,7 +336,7 @@
               <a href="#">반품/교환정보</a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div class="detail">
           <div class="table_title">
             <strong>상품정보</strong>
@@ -660,13 +691,23 @@
 
   });
   
-  $(".photo").mouseover(function(){
+  $(".photo").mouseenter(function(){
 
       $(".photo button").show();
   
   });
-  $(".photo").mouseout(function(){
-    $(".photo button").hide();
+  $(".photo").mouseleave(function(){
+     $(".photo button").hide();
+  });
+
+  // var obj = $(".content_information nav").offset();
+  // console.log(obj);
+
+  $(document).scroll(function(){
+
+      if($(this).scrollTop()){
+         $(".content_fix").css({"display" : "block"});
+      }
   });
 </script>
 </html>

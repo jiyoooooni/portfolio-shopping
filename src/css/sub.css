@@ -53,12 +53,6 @@ img {
   height: 100%;
 }
 
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 body, html {
   position: relative;
 }
@@ -100,6 +94,12 @@ body, html {
   padding-top: 8px;
 }
 
+.hd_top .gnb_right::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
 .hd_top .gnb_right .login {
   float: left;
 }
@@ -124,7 +124,7 @@ body, html {
   background-position: -261px -120px;
 }
 
-.hd_top:after {
+.hd_top::after {
   content: "";
   position: absolute;
   right: 0;
@@ -254,7 +254,7 @@ body, html {
   background-position: -292px -166px;
 }
 
-.hd_mid .btn a + a:before {
+.hd_mid .btn a + a::before {
   content: "";
   position: absolute;
   top: 1px;
@@ -369,7 +369,7 @@ body, html {
   background-position: -31px -364px;
 }
 
-.hd_btm nav ul .manu13 span:before {
+.hd_btm nav ul .manu13 span::before {
   content: "";
   display: block;
   position: absolute;
@@ -436,7 +436,7 @@ body, html {
   font-size: 14px;
 }
 
-.content .section .section_title a:after {
+.content .section .section_title a::after {
   content: "";
   position: absolute;
   display: block;
@@ -451,6 +451,7 @@ body, html {
 
 .content .section .art_wrap {
   text-align: center;
+  font-size: 0;
 }
 
 .content .section .art_wrap .art_list {
@@ -479,14 +480,10 @@ body, html {
 }
 
 .content .section .art_wrap .art_list .sale {
+  margin-right: 5px;
   color: red;
   font-size: 18px;
   font-weight: bold;
-}
-
-.content .section .art_wrap .art_list .sale:after {
-  content: "%";
-  font-size: 12px;
 }
 
 .content .section .art_wrap .art_list .price {
@@ -497,8 +494,15 @@ body, html {
 
 .content .section .art_wrap .art_list .info {
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: block;
   margin-top: 10px;
-  padding-bottom: 50px;
+  height: 50px;
+  padding-bottom: 70px;
   width: 202px;
   color: #222;
   font-size: 12px;
@@ -591,6 +595,7 @@ body, html {
 
 .content .visual .visual_nav ul {
   text-align: center;
+  font-size: 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -654,100 +659,18 @@ body, html {
   background-position: 0px -68px;
 }
 
-.content .today .no1 .thumb {
-  background-image: url(../img/today_artlist_no1.jpg);
+.content .today .thumb {
+  position: relative;
+  overflow: hidden;
 }
 
-.content .today .no2 .thumb {
-  background-image: url(../img/today_artlist_no2.jpg);
-}
-
-.content .today .no3 .thumb {
-  background-image: url(../img/today_artlist_no3.jpg);
-}
-
-.content .today .no4 .thumb {
-  background-image: url(../img/today_artlist_no4.jpg);
-}
-
-.content .today .no5 .thumb {
-  background-image: url(../img/today_artlist_no5.jpg);
-}
-
-.content .today .no6 .thumb {
-  background-image: url(../img/today_artlist_no6.jpg);
-}
-
-.content .today .no7 .thumb {
-  background-image: url(../img/today_artlist_no7.jpeg);
-}
-
-.content .today .no8 .thumb {
-  background-image: url(../img/today_artlist_no8.jpeg);
-}
-
-.content .today .no9 .thumb {
-  background-image: url(../img/today_artlist_no9.jpg);
-}
-
-.content .today .no10 .thumb {
-  background-image: url(../img/today_artlist_no10.jpg);
-}
-
-.content .today .no11 .thumb {
-  background-image: url(../img/today_artlist_no11.jpeg);
-}
-
-.content .today .no12 .thumb {
-  background-image: url(../img/today_artlist_no12.jpeg);
-}
-
-.content .today .no13 .thumb {
-  background-image: url(../img/today_artlist_no13.jpg);
-}
-
-.content .today .no14 .thumb {
-  background-image: url(../img/today_artlist_no14.jpg);
-}
-
-.content .today .no15 .thumb {
-  background-image: url(../img/today_artlist_no15.jpeg);
-}
-
-.content .today .no16 .thumb {
-  background-image: url(../img/today_artlist_no16.jpg);
-}
-
-.content .today .no17 .thumb {
-  background-image: url(../img/today_artlist_no17.jpg);
-}
-
-.content .today .no18 .thumb {
-  background-image: url(../img/today_artlist_no18.jpg);
-}
-
-.content .today .no19 .thumb {
-  background-image: url(../img/today_artlist_no19.jpg);
-}
-
-.content .today .no20 .thumb {
-  background-image: url(../img/today_artlist_no20.jpg);
-}
-
-.content .today .no21 .thumb {
-  background-image: url(../img/today_artlist_no21.jpg);
-}
-
-.content .today .no22 .thumb {
-  background-image: url(../img/today_artlist_no22.jpg);
-}
-
-.content .today .no23 .thumb {
-  background-image: url(../img/today_artlist_no23.jpeg);
-}
-
-.content .today .no24 .thumb {
-  background-image: url(../img/today_artlist_no24.jpg);
+.content .today .thumb img {
+  position: absolute;
+  margin: auto;
+  right: -50%;
+  left: -50%;
+  width: auto;
+  height: 100%;
 }
 
 footer {
@@ -767,7 +690,7 @@ footer .policy .list {
   margin-left: 10px;
 }
 
-footer .policy a + a:before {
+footer .policy a + a::before {
   content: "";
   position: absolute;
   top: 1px;
@@ -793,7 +716,7 @@ footer address span, footer address a {
   margin-left: 10px;
 }
 
-footer address .line:before {
+footer address .line::before {
   content: "";
   position: absolute;
   top: 1px;

@@ -1,42 +1,68 @@
 $sprite-map: (
-sp_png_icon_two: (
-  width: 507px,
-  height: 480px,
-  url: url(../img/sp/sp_png_icon_two.png),
+sp_icon: (
+  width: 92px,
+  height: 92px,
+  url: url(../img/sp/sp_icon.png),
   images: (
-    blog: (
-      offset_x: -480px,
-      offset_y: 0px,
-      width: 27px,
-      height: 27px
-    ),
-    house-outline: (
+    arrow_left_32x32_black: (
       offset_x: 0px,
       offset_y: 0px,
-      width: 480px,
-      height: 480px
+      width: 32px,
+      height: 32px
     ),
-  )
-)
-
-
-,
-sp_png_icon: (
-  width: 507px,
-  height: 480px,
-  url: url(../img/sp/sp_png_icon.png),
-  images: (
-    blog: (
-      offset_x: -480px,
+    arrow_right_32x32_black: (
+      offset_x: -32px,
       offset_y: 0px,
+      width: 32px,
+      height: 32px
+    ),
+    blog_28x28_green: (
+      offset_x: -32px,
+      offset_y: -32px,
+      width: 28px,
+      height: 28px
+    ),
+    cafe_27x29_green: (
+      offset_x: -64px,
+      offset_y: -28px,
       width: 27px,
-      height: 27px
+      height: 29px
     ),
-    house-outline: (
+    favorite_27x28_green: (
       offset_x: 0px,
+      offset_y: -64px,
+      width: 27px,
+      height: 28px
+    ),
+    home-32x32_black: (
+      offset_x: 0px,
+      offset_y: -32px,
+      width: 32px,
+      height: 32px
+    ),
+    home_21x21_white: (
+      offset_x: -53px,
+      offset_y: -64px,
+      width: 21px,
+      height: 21px
+    ),
+    lock_15x15_black: (
+      offset_x: -74px,
+      offset_y: -64px,
+      width: 15px,
+      height: 15px
+    ),
+    note_28x28_green: (
+      offset_x: -64px,
       offset_y: 0px,
-      width: 480px,
-      height: 480px
+      width: 28px,
+      height: 28px
+    ),
+    share_26x25_share: (
+      offset_x: -27px,
+      offset_y: -64px,
+      width: 26px,
+      height: 25px
     ),
   )
 )
