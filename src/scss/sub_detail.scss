@@ -398,7 +398,8 @@
               display: inline-block;
               width: 50px;
               height: 50px;
-              background-color: black;
+              background-image: url(../img/photo_no1_small.jpg);
+              background-size: cover;
             }
             .info {
               display: inline-block;
@@ -625,6 +626,35 @@
                   border: 1px solid #ddd;
                   cursor: pointer;
                 }
+                .selectbx_detail {
+                  position: absolute;
+                  top: 52px;
+                  left: 0;
+                  width: 448px;
+                  height: 75px;
+                  border: 1px solid #888;
+                  background-color: #fff;
+                    .selectbx_detail_list:first-child {
+                      border-bottom: 1px solid #ddd;
+                    }
+                    .selectbx_detail_list {
+                      padding: 0 5px;
+                        a {
+                          display: block;
+                          height: 36px;
+                          color: #888;
+                          font-size: 14px;
+                          line-height: 36px;
+                          text-indent: 8px;
+                        }
+                    }
+                    .selectbx_detail_list:hover {
+                      background-color: #efefef;
+                        a {
+                          color: #000;
+                        }
+                    }
+                }
                 .selectbx:hover {
                   border-color: #000;
                 }
@@ -640,6 +670,7 @@
                   vertical-align: middle;
                 }
                 .delivery {
+                  position: relative;
                   padding: 17px 0;
                   color: #333;
                   font-size: 14px;
@@ -658,6 +689,7 @@
                     }
                 }
                 .option {
+                  position: relative;
                   padding: 17px 0;
                 }
                 .total {
@@ -718,6 +750,19 @@
                         .no2 {
                           color: #222;
                           border: 1px solid #ddd;
+                            a {
+                              position: relative;
+                            }
+                            a::before {
+                              content: "";
+                              display: block;
+                              position: absolute;
+                              top: -2px;
+                              left: 55px;
+                              width: 20px;
+                              height: 20px;
+                              @include sprite-image("tak_25x25_white", "icon")
+                            }
                         }
                         .no3 {
                           background-color: #555;
@@ -915,7 +960,7 @@
         .qna {
           padding: 50px 0;
             .buttonarea {
-              overflow: hidden;
+              @include clearfix
               padding: 15px 0 0;
               font-size: 0;
                 button {
@@ -932,6 +977,7 @@
 
                 .rightbx {
                   float: right;
+                  position: relative;
                     .text {
                       margin-right: 25px;
                       font-size: 13px;
@@ -971,8 +1017,11 @@
                   padding: 10px;
                   width: 90px;
                   height: 35px;
+                  color: #000;
                   font-size: 13px;
+                  text-align: left;
                   border: 1px solid #ddd;
+                  background-color: #fff;
                   vertical-align: bottom;
                     .btn {
                       display: block;
@@ -983,6 +1032,32 @@
                       border-top-color: #888;
                       
                       
+                    }
+                }
+                .filter_detail {
+                  position: absolute;
+                  top: 34px;
+                  right: 0;
+                  width: 90px;
+                  height: 101px;
+                  background-color: #fff;
+                  border: 1px solid #888;
+                    .filter_detail_list {
+                        a {
+                          padding: 7px;
+                          display: block;
+                          height: 33px;
+                          font-size: 14px;
+                          color: #888;
+                        }
+                    }
+                    .filter_detail_list:hover {
+                        a {
+                          color: #6b90dc;
+                          font-weight: bold;
+                          background-color: #f5f7fc;
+
+                        }
                     }
                 }
             }

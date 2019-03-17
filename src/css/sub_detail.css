@@ -477,7 +477,8 @@ img {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-color: black;
+  background-image: url(../img/photo_no1_small.jpg);
+  background-size: cover;
 }
 
 .content .content_fix .fix_wrap .info {
@@ -515,7 +516,7 @@ img {
   height: 20px;
   width: 21px;
   height: 21px;
-  background: transparent url(../img/sp/sp_icon.png) -53px -64px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) -92px 0px/113px 92px;
   vertical-align: bottom;
 }
 
@@ -556,7 +557,7 @@ img {
   height: 17px;
   width: 32px;
   height: 32px;
-  background: transparent url(../img/sp/sp_icon.png) 0px -32px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) 0px 0px/113px 92px;
 }
 
 .content .content_header .content_header_category .cate1::after {
@@ -586,31 +587,31 @@ img {
 .content .content_header .content_header_route .blog {
   width: 28px;
   height: 28px;
-  background: transparent url(../img/sp/sp_icon.png) -32px -32px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) -32px -32px/113px 92px;
 }
 
 .content .content_header .content_header_route .cafe {
   width: 27px;
   height: 29px;
-  background: transparent url(../img/sp/sp_icon.png) -64px -28px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) -64px -28px/113px 92px;
 }
 
 .content .content_header .content_header_route .favorite {
   width: 27px;
   height: 28px;
-  background: transparent url(../img/sp/sp_icon.png) 0px -64px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) 0px -64px/113px 92px;
 }
 
 .content .content_header .content_header_route .note {
   width: 28px;
   height: 28px;
-  background: transparent url(../img/sp/sp_icon.png) -64px 0px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) -64px 0px/113px 92px;
 }
 
 .content .content_header .content_header_route .share {
   width: 26px;
   height: 25px;
-  background: transparent url(../img/sp/sp_icon.png) -27px -64px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) -27px -64px/113px 92px;
 }
 
 .content .content_product {
@@ -665,14 +666,14 @@ img {
 .content .content_product .content_product_buy .leftbx .viewbx .photo .prev {
   width: 32px;
   height: 32px;
-  background: transparent url(../img/sp/sp_icon.png) 0px 0px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) -32px 0px/113px 92px;
   left: 15px;
 }
 
 .content .content_product .content_product_buy .leftbx .viewbx .photo .next {
   width: 32px;
   height: 32px;
-  background: transparent url(../img/sp/sp_icon.png) -32px 0px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) 0px -32px/113px 92px;
   right: 15px;
 }
 
@@ -769,6 +770,41 @@ img {
   cursor: pointer;
 }
 
+.content .content_product .content_product_buy .rightbx .selectbx_detail {
+  position: absolute;
+  top: 52px;
+  left: 0;
+  width: 448px;
+  height: 75px;
+  border: 1px solid #888;
+  background-color: #fff;
+}
+
+.content .content_product .content_product_buy .rightbx .selectbx_detail .selectbx_detail_list:first-child {
+  border-bottom: 1px solid #ddd;
+}
+
+.content .content_product .content_product_buy .rightbx .selectbx_detail .selectbx_detail_list {
+  padding: 0 5px;
+}
+
+.content .content_product .content_product_buy .rightbx .selectbx_detail .selectbx_detail_list a {
+  display: block;
+  height: 36px;
+  color: #888;
+  font-size: 14px;
+  line-height: 36px;
+  text-indent: 8px;
+}
+
+.content .content_product .content_product_buy .rightbx .selectbx_detail .selectbx_detail_list:hover {
+  background-color: #efefef;
+}
+
+.content .content_product .content_product_buy .rightbx .selectbx_detail .selectbx_detail_list:hover a {
+  color: #000;
+}
+
 .content .content_product .content_product_buy .rightbx .selectbx:hover {
   border-color: #000;
 }
@@ -786,6 +822,7 @@ img {
 }
 
 .content .content_product .content_product_buy .rightbx .delivery {
+  position: relative;
   padding: 17px 0;
   color: #333;
   font-size: 14px;
@@ -809,6 +846,7 @@ img {
 }
 
 .content .content_product .content_product_buy .rightbx .option {
+  position: relative;
   padding: 17px 0;
 }
 
@@ -879,12 +917,29 @@ img {
   height: 20px;
   width: 21px;
   height: 21px;
-  background: transparent url(../img/sp/sp_icon.png) -53px -64px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) -92px 0px/113px 92px;
 }
 
 .content .content_product .content_product_buy .rightbx .buttonarea .buttonbx .no2 {
   color: #222;
   border: 1px solid #ddd;
+}
+
+.content .content_product .content_product_buy .rightbx .buttonarea .buttonbx .no2 a {
+  position: relative;
+}
+
+.content .content_product .content_product_buy .rightbx .buttonarea .buttonbx .no2 a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 55px;
+  width: 20px;
+  height: 20px;
+  width: 25px;
+  height: 25px;
+  background: transparent url(../img/sp/sp_icon.png) -53px -64px/113px 92px;
 }
 
 .content .content_product .content_product_buy .rightbx .buttonarea .buttonbx .no3 {
@@ -1104,9 +1159,14 @@ img {
 }
 
 .content .content_information .qna .buttonarea {
-  overflow: hidden;
   padding: 15px 0 0;
   font-size: 0;
+}
+
+.content .content_information .qna .buttonarea::after {
+  display: block;
+  clear: both;
+  content: '';
 }
 
 .content .content_information .qna .buttonarea button {
@@ -1124,6 +1184,7 @@ img {
 
 .content .content_information .qna .buttonarea .rightbx {
   float: right;
+  position: relative;
 }
 
 .content .content_information .qna .buttonarea .rightbx .text {
@@ -1168,8 +1229,11 @@ img {
   padding: 10px;
   width: 90px;
   height: 35px;
+  color: #000;
   font-size: 13px;
+  text-align: left;
   border: 1px solid #ddd;
+  background-color: #fff;
   vertical-align: bottom;
 }
 
@@ -1180,6 +1244,30 @@ img {
   right: 10px;
   border: 6px solid transparent;
   border-top-color: #888;
+}
+
+.content .content_information .qna .buttonarea .filter_detail {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  width: 90px;
+  height: 101px;
+  background-color: #fff;
+  border: 1px solid #888;
+}
+
+.content .content_information .qna .buttonarea .filter_detail .filter_detail_list a {
+  padding: 7px;
+  display: block;
+  height: 33px;
+  font-size: 14px;
+  color: #888;
+}
+
+.content .content_information .qna .buttonarea .filter_detail .filter_detail_list:hover a {
+  color: #6b90dc;
+  font-weight: bold;
+  background-color: #f5f7fc;
 }
 
 .content .content_information .qna .noticearea ul {
@@ -1232,7 +1320,7 @@ img {
   vertical-align: bottom;
   width: 15px;
   height: 15px;
-  background: transparent url(../img/sp/sp_icon.png) -74px -64px/92px 92px;
+  background: transparent url(../img/sp/sp_icon.png) -92px -21px/113px 92px;
 }
 
 .content .content_information .qna .pagenum {

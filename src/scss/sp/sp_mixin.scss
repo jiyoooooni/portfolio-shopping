@@ -1,18 +1,18 @@
 $sprite-map: (
 sp_icon: (
-  width: 92px,
+  width: 113px,
   height: 92px,
   url: url(../img/sp/sp_icon.png),
   images: (
     arrow_left_32x32_black: (
-      offset_x: 0px,
+      offset_x: -32px,
       offset_y: 0px,
       width: 32px,
       height: 32px
     ),
     arrow_right_32x32_black: (
-      offset_x: -32px,
-      offset_y: 0px,
+      offset_x: 0px,
+      offset_y: -32px,
       width: 32px,
       height: 32px
     ),
@@ -36,19 +36,19 @@ sp_icon: (
     ),
     home-32x32_black: (
       offset_x: 0px,
-      offset_y: -32px,
+      offset_y: 0px,
       width: 32px,
       height: 32px
     ),
     home_21x21_white: (
-      offset_x: -53px,
-      offset_y: -64px,
+      offset_x: -92px,
+      offset_y: 0px,
       width: 21px,
       height: 21px
     ),
     lock_15x15_black: (
-      offset_x: -74px,
-      offset_y: -64px,
+      offset_x: -92px,
+      offset_y: -21px,
       width: 15px,
       height: 15px
     ),
@@ -62,6 +62,12 @@ sp_icon: (
       offset_x: -27px,
       offset_y: -64px,
       width: 26px,
+      height: 25px
+    ),
+    tak_25x25_white: (
+      offset_x: -53px,
+      offset_y: -64px,
+      width: 25px,
       height: 25px
     ),
   )
