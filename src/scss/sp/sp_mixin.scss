@@ -1,7 +1,7 @@
 $sprite-map: (
 sp_icon: (
-  width: 113px,
-  height: 92px,
+  width: 114px,
+  height: 93px,
   url: url(../img/sp/sp_icon.png),
   images: (
     arrow_left_32x32_black: (
@@ -17,22 +17,34 @@ sp_icon: (
       height: 32px
     ),
     blog_28x28_green: (
-      offset_x: -32px,
-      offset_y: -32px,
+      offset_x: -64px,
+      offset_y: -19px,
       width: 28px,
       height: 28px
     ),
     cafe_27x29_green: (
-      offset_x: -64px,
-      offset_y: -28px,
-      width: 27px,
-      height: 29px
-    ),
-    favorite_27x28_green: (
       offset_x: 0px,
       offset_y: -64px,
       width: 27px,
+      height: 29px
+    ),
+    check_16x16_black: (
+      offset_x: -81px,
+      offset_y: -47px,
+      width: 16px,
+      height: 16px
+    ),
+    favorite_27x28_green: (
+      offset_x: -27px,
+      offset_y: -64px,
+      width: 27px,
       height: 28px
+    ),
+    good_17x16_white: (
+      offset_x: -64px,
+      offset_y: -47px,
+      width: 17px,
+      height: 16px
     ),
     home-32x32_black: (
       offset_x: 0px,
@@ -42,30 +54,36 @@ sp_icon: (
     ),
     home_21x21_white: (
       offset_x: -92px,
-      offset_y: 0px,
+      offset_y: -19px,
       width: 21px,
       height: 21px
     ),
     lock_15x15_black: (
-      offset_x: -92px,
-      offset_y: -21px,
+      offset_x: -97px,
+      offset_y: -47px,
       width: 15px,
       height: 15px
     ),
-    note_28x28_green: (
+    naverpoint_50x19_green: (
       offset_x: -64px,
       offset_y: 0px,
+      width: 50px,
+      height: 19px
+    ),
+    note_28x28_green: (
+      offset_x: -32px,
+      offset_y: -32px,
       width: 28px,
       height: 28px
     ),
     share_26x25_share: (
-      offset_x: -27px,
+      offset_x: -54px,
       offset_y: -64px,
       width: 26px,
       height: 25px
     ),
     tak_25x25_white: (
-      offset_x: -53px,
+      offset_x: -80px,
       offset_y: -64px,
       width: 25px,
       height: 25px
