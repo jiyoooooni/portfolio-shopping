@@ -53,8 +53,14 @@ img {
   display: block;
   position: relative;
   margin: auto;
-  width: 1280px;
+  width: 940px;
   height: 100%;
+}
+
+@media (min-width: 1365px) {
+  .inner {
+    width: 1280px;
+  }
 }
 
 .hd_top {
@@ -195,6 +201,27 @@ img {
   background-image: url(../img/spSv_global.png);
   background-size: 423px 400px;
   background-position: 0 -215px;
+}
+
+.hd_mid .searchwrap .detail_btn {
+  float: left;
+  position: relative;
+  margin: 8px 12px;
+  width: 43px;
+  height: 14px;
+  background-image: url(../img/spSv_global.png);
+  background-size: 423px 400px;
+  background-position: -358px -287px;
+}
+
+.hd_mid .searchwrap .detail_btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  border: 4px solid transparent;
+  border-top-color: #fff;
 }
 
 .hd_mid .category {
@@ -386,6 +413,22 @@ img {
 .hd_btm nav ul .manu15 span {
   width: 37px;
   background-position: -244px -136px;
+}
+
+.hd_btm nav ul .check span {
+  position: relative;
+  width: 51px;
+  background-position: -55px -308px;
+}
+
+.hd_btm nav ul .check span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #4cc370;
 }
 
 .hd_btm .artwin_search {
@@ -659,6 +702,10 @@ img {
   position: absolute;
 }
 
+.content .content_product .content_product_buy .leftbx .viewbx .photo .item:hover ~ button {
+  display: block;
+}
+
 .content .content_product .content_product_buy .leftbx .viewbx .photo button {
   display: none;
   position: absolute;
@@ -774,6 +821,18 @@ img {
   text-align: left;
   border: 1px solid #ddd;
   cursor: pointer;
+}
+
+.content .content_product .content_product_buy .rightbx .arrow_bottom {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 14px;
+  height: 8px;
+  background-image: url(../img/spSw_product_detail_svg.svg);
+  background-size: 647px 626px;
+  background-position: -389px -433px;
 }
 
 .content .content_product .content_product_buy .rightbx .selectbx_detail {
@@ -1168,15 +1227,15 @@ img {
   border-radius: 50%;
 }
 
-.content .content_information .detail .col2 td {
+.content .content_information .detail .detail td {
   width: 860px;
 }
 
-.content .content_information .detail .col2_long th {
+.content .content_information .detail .condition th {
   width: 345px;
 }
 
-.content .content_information .detail .col2_long td {
+.content .content_information .detail .condition td {
   width: 675px;
 }
 

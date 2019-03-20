@@ -44,7 +44,10 @@
             <span class="blind">연관검색어</span>
           </button>
           <button type="button" class="search_btn">
-            <stron class="blind">네이버 쇼핑검색</stron>   
+            <strong class="blind">네이버 쇼핑검색</strong>   
+          </button>
+          <button type="button" class="detail_btn">
+            <span class="blind">상세검색</span>
           </button>
         </div>
         <div class="category">
@@ -136,7 +139,7 @@
                 <span>플레이윈도</span>
               </a>
             </li>
-            <li class="manu12">
+            <li class="manu12 check">
               <a href="#">
                 <span>아트윈도</span>
               </a>
@@ -265,6 +268,7 @@
               </div>
               <div class="delivery">
                 <button class="selectbx">다른 배송방법 선택하기</button>
+                <span class="arrow_bottom"></span>
                 <ul class="selectbx_detail">
                   <li class="selectbx_detail_list">
                     <a href="#">택배</a>
@@ -283,6 +287,7 @@
               </div>
               <div class="option">
                   <button class="selectbx">액자</button>
+                  <span class="arrow_bottom"></span>
                   <ul class="selectbx_detail">
                       <li class="selectbx_detail_list">
                         <a href="#">액자(유)(+80,000원)</a>
@@ -355,7 +360,7 @@
         </div>
         <div class="detail">
           <strong class="table_title">상품정보</strong>
-          <table class="col4">
+          <table>
             <caption></caption>
             <tbody>
               <tr>
@@ -389,7 +394,7 @@
               </tr>
             </tbody>
           </table>
-          <table class="col2">
+          <table class="detail">
             <caption></caption>
             <tbody>
               <tr>
@@ -403,7 +408,7 @@
             </tbody>
           </table>
           <strong class="table_title">상품정보 제공고시</strong>
-          <table class="col2">
+          <table class="detail">
             <caption></caption>
             <tbody>
               <tr>
@@ -433,7 +438,7 @@
             </tbody>
           </table>
           <strong class="table_title">거래조건에 관한 정보</strong>
-          <table class="col2_long">
+          <table class="condition">
             <caption></caption>
             <tbody>
               <tr>
@@ -923,7 +928,7 @@
               <strong>갤러리세인 반품/교환 안내</strong>
               <p>반품 시 먼저 판매자와 연락하셔서 반품사유, 택배사, 배송비, 반품지 주소 등을 협의하신 후 반품상품을 발송해 주시기 바랍니다.</p>
             </div>
-            <table class="col4">
+            <table>
               <caption></caption>
               <tbody>
                 <tr>
@@ -962,7 +967,7 @@
               </tbody>
             </table>
             <strong class="table_title">판매자정보</strong>
-            <table class="col4">
+            <table>
               <caption></caption>
               <tbody>
                 <tr>
@@ -1061,15 +1066,6 @@
 
       $(".photo .item").hide().eq(idx).show();
 
-  });
-  
-  $(".photo").mouseenter(function(){
-
-      $(".photo button").show();
-  
-  });
-  $(".photo").mouseleave(function(){
-     $(".photo button").hide();
   });
 
   // var obj = $(".content_information nav").offset();

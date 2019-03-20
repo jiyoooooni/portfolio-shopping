@@ -49,12 +49,14 @@ img {
   display: block;
   position: relative;
   margin: auto;
-  width: 1280px;
+  width: 940px;
   height: 100%;
 }
 
-body, html {
-  position: relative;
+@media (min-width: 1365px) {
+  .inner {
+    width: 1280px;
+  }
 }
 
 .hd_top {
@@ -201,6 +203,27 @@ body, html {
   background-image: url(../img/spSv_global.png);
   background-size: 423px 400px;
   background-position: 0 -215px;
+}
+
+.hd_mid .searchwrap .detail_btn {
+  float: left;
+  position: relative;
+  margin: 8px 12px;
+  width: 43px;
+  height: 14px;
+  background-image: url(../img/spSv_global.png);
+  background-size: 423px 400px;
+  background-position: -358px -287px;
+}
+
+.hd_mid .searchwrap .detail_btn::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  border: 4px solid transparent;
+  border-top-color: #fff;
 }
 
 .hd_mid .category {
@@ -390,6 +413,22 @@ body, html {
   background-position: -244px -136px;
 }
 
+.hd_btm nav ul .check span {
+  position: relative;
+  width: 51px;
+  background-position: -55px -308px;
+}
+
+.hd_btm nav ul .check span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #4cc370;
+}
+
 .hd_btm .artwin_search {
   position: absolute;
   margin-top: 7px;
@@ -458,6 +497,7 @@ body, html {
   display: inline-block;
   padding: 0 5.5px 30px 5.5px;
   text-align: left;
+  vertical-align: top;
 }
 
 .content .section .art_wrap .art_list .thumb {
@@ -541,6 +581,55 @@ body, html {
 
 .content .section .art_wrap .art_list:hover .thumb {
   border-color: #89bb6d;
+}
+
+.content .section .art_wrap .event .thumb {
+  position: relative;
+}
+
+.content .section .art_wrap .event .thumb .text {
+  position: absolute;
+  padding: 45px 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 135px;
+  height: 125px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+.content .section .art_wrap .event .eventbx {
+  position: relative;
+  width: 202px;
+  height: 165px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  background-color: #80b066;
+}
+
+.content .section .art_wrap .event .eventbx .event_title {
+  display: inline-block;
+  margin: 25px 0;
+  width: 60px;
+  height: 15px;
+  background-image: url(../img/spSw_window_list_svg.svg);
+  background-position: -202px -60px;
+}
+
+.content .section .art_wrap .event .eventbx strong {
+  position: absolute;
+  display: block;
+  left: 50%;
+  margin-left: -21px;
+  bottom: 30px;
+  margin-top: 10px;
+  opacity: 0.5;
 }
 
 .content .content_navwrap {

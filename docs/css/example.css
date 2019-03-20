@@ -53,12 +53,6 @@ img {
   height: 100%;
 }
 
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .hd_top {
   position: relative;
   height: 36px;
@@ -96,6 +90,12 @@ img {
   padding-top: 8px;
 }
 
+.hd_top .gnb_right::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
 .hd_top .gnb_right .login {
   float: left;
 }
@@ -120,7 +120,7 @@ img {
   background-position: -261px -120px;
 }
 
-.hd_top:after {
+.hd_top::after {
   content: "";
   position: absolute;
   right: 0;
@@ -250,7 +250,7 @@ img {
   background-position: -292px -166px;
 }
 
-.hd_mid .btn a + a:before {
+.hd_mid .btn a + a::before {
   content: "";
   position: absolute;
   top: 1px;
@@ -365,7 +365,7 @@ img {
   background-position: -31px -364px;
 }
 
-.hd_btm nav ul .manu13 span:before {
+.hd_btm nav ul .manu13 span::before {
   content: "";
   display: block;
   position: absolute;
@@ -426,7 +426,7 @@ img {
   font-weight: bold;
 }
 
-.content .section .section_title:before {
+.content .section .section_title::before {
   content: "";
   display: block;
   position: absolute;
@@ -438,7 +438,7 @@ img {
   background-color: #89bb6d;
 }
 
-.content .section .section_title:after {
+.content .section .section_title::after {
   content: "";
   display: block;
   position: absolute;
@@ -462,7 +462,7 @@ img {
   padding-right: 25px;
 }
 
-.content .section .moreview a:after {
+.content .section .moreview a::after {
   content: "";
   display: block;
   position: absolute;
@@ -491,10 +491,22 @@ img {
 }
 
 .content .section .list_art .item_art .thumb {
+  overflow: hidden;
   position: relative;
   width: 202px;
   height: 260px;
   border: 1px solid #ddd;
+}
+
+.content .section .list_art .item_art .thumb img {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  bottom: -50%;
+  right: -50%;
+  margin: auto;
+  width: auto;
+  height: 100%;
 }
 
 .content .section .list_art .item_art .thumb button {
@@ -516,6 +528,10 @@ img {
 }
 
 .content .section .list_art .item_art .info {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   display: block;
   margin-top: 10px;
   padding-bottom: 50px;
@@ -542,6 +558,10 @@ img {
 }
 
 .content .section .list_art .item_art .made span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   display: block;
   font-size: 14px;
   font-weight: bold;
@@ -719,54 +739,6 @@ img {
   background-position: 0px -68px;
 }
 
-.content .today .no1 .thumb {
-  background-image: url(../img/artlist_no1.jpg);
-}
-
-.content .today .no2 .thumb {
-  background-image: url(../img/artlist_no2.jpg);
-}
-
-.content .today .no3 .thumb {
-  background-image: url(../img/artlist_no3.jpg);
-}
-
-.content .today .no4 .thumb {
-  background-image: url(../img/artlist_no4.jpg);
-}
-
-.content .today .no5 .thumb {
-  background-image: url(../img/artlist_no5.jpeg);
-}
-
-.content .today .no6 .thumb {
-  background-image: url(../img/artlist_no6.jpg);
-}
-
-.content .design .no1 .thumb {
-  background-image: url(../img/design_no1.jpeg);
-}
-
-.content .design .no2 .thumb {
-  background-image: url(../img/design_no2.jpg);
-}
-
-.content .design .no3 .thumb {
-  background-image: url(../img/design_no3.jpeg);
-}
-
-.content .design .no4 .thumb {
-  background-image: url(../img/design_no4.jpg);
-}
-
-.content .design .no5 .thumb {
-  background-image: url(../img/design_no5.jpg);
-}
-
-.content .design .no6 .thumb {
-  background-image: url(../img/design_no6.jpg);
-}
-
 .content .week .list_designer {
   overflow: hidden;
 }
@@ -915,7 +887,7 @@ footer .policy .list {
   margin-left: 10px;
 }
 
-footer .policy a + a:before {
+footer .policy a + a::before {
   content: "";
   position: absolute;
   top: 1px;
@@ -941,7 +913,7 @@ footer address span, footer address a {
   margin-left: 10px;
 }
 
-footer address .line:before {
+footer address .line::before {
   content: "";
   position: absolute;
   top: 1px;
