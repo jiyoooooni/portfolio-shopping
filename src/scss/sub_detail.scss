@@ -1,16 +1,15 @@
 @import "./common/mixin.scss";
 @import "./sp/sp_mixin.scss";
 @import "./common/reset.scss";
-.active {border: 2px solid #000;}
- 
+
+//grobal
+.active {
+  border: 2px solid #000;
+}
 .inner {
     @include inner
 }
-@media (min-width: 1365px){
-  .inner {
-    width: 1280px;
-  }
-}
+
 .hd_top {
    position: relative; 
    height: 36px; 
@@ -218,18 +217,18 @@
   nav {
     overflow: hidden;
     font-size: 0;
-      ul {
-        display: inline-block;
+      .manu_wrap {
+        float: left;
         color: transparent;
-          li {
-            float: left;
+          .manu {
+            display: inline-block;
               span {
                 display: block;
                 height: 15px;
                 background-image: url(../img/spSv_global.png); 
                 background-size: 423px 400px; 
               }
-              a {
+              .manu_detail {
                 display: block;
                 padding: 15px 8px;
                 width: 100%;
@@ -489,7 +488,7 @@
       border-bottom: 2px solid #000;
         .content_header_category {
           float: left;
-          margin-left: 50px;
+          margin-left: 25px;
             a {
               vertical-align: middle;
               line-height: 54px;
@@ -503,12 +502,12 @@
               content: "";
               display: inline-block;
               position: absolute;
-              top: -10px;
-              left: -40px;
+              top: -2px;
+              left: -22px;
               width: 17px;
               height: 17px;
               opacity: 0.5;
-              @include sprite-image("home-32x32_black", "icon");
+              @include sprite-image("home_16x16_black", "icon");
             }
             .cate1::after {
               content: " >"
@@ -573,9 +572,6 @@
                           display: none;
                           position: absolute;
                         }
-                        .item:hover~button {
-                          display: block;
-                        }
                         button {
                           display: none;
                           position: absolute;
@@ -593,7 +589,10 @@
                           @include sprite-image("arrow_right_32x32_black", "icon");
                           right: 15px;
                         }
-                      }
+                    }
+                    .photo:hover button {
+                      display: block;
+                    }
                 }
                 .view_list {
                   padding: 15px 0 80px;
@@ -614,7 +613,7 @@
                   padding: 0 40px;
                   font-size: 13px;
                   text-align: left;
-                    span {
+                    .text {
                       display: inline-block;
                         strong {
                           font-size: 20px;
@@ -648,9 +647,6 @@
               font-size: 16px;
               text-align: left;
               border: 1px solid #ddd;
-                legend {
-                  font-size: 0;
-                }
                 .title {
                   padding-bottom: 15px;
                   border-bottom: 1px solid #ddd;
@@ -674,7 +670,8 @@
                   border: 1px solid #ddd;
                   cursor: pointer;
                 }
-                .arrow_bottom {
+                .selectbx::after {
+                  content: '';
                   display: block;
                   position: absolute;
                   top: 30px;
@@ -697,9 +694,9 @@
                       border-bottom: 1px solid #ddd;
                     }
                     .selectbx_detail_list {
-                      padding: 0 5px;
-                        a {
+                        .selectbx_detail_list_in {
                           display: block;
+                          padding: 0 5px;
                           height: 36px;
                           color: #888;
                           font-size: 14px;
@@ -776,7 +773,7 @@
                 }
                 .buttonarea {
                   padding: 10px 0;
-                    a {
+                    .text {
                       display: block;
                     }
                     .buttonbx {
@@ -792,10 +789,10 @@
                         }
                         .no1 {
                           background-color: #3fc910;
-                            a {
+                            .text {
                               position: relative;
                             }
-                            a::before {
+                            .text::before {
                               content: "";
                               display: block;
                               position: absolute;
@@ -809,10 +806,10 @@
                         .no2 {
                           color: #222;
                           border: 1px solid #ddd;
-                            a {
-                              position: relative;
-                            }
-                            a::before {
+                            .text {
+                                position: relative;
+                              }
+                            .text::before {
                               content: "";
                               display: block;
                               position: absolute;
@@ -976,7 +973,7 @@
           border-spacing: 0;
           border-bottom: 1px solid #ededed;
             tr {
-                th {
+                .table_head {
                   padding: 10px 20px;
                   width: 160px;
                   height: 40px;
@@ -986,7 +983,7 @@
                   border-top: 1px solid #ededed;
                   background-color:#fafafa;
                 }
-                td{
+                .table_body {
                   padding: 10px 20px;
                   width: 350px;
                   color: #6e6e6e;
@@ -1021,15 +1018,15 @@
               border-radius: 50%;
             }
             .detail {
-                td {
+                .table_body {
                   width: 860px;
                 }
             }
             .condition {
-                th {
+                .table_head {
                   width: 345px;
                 }
-                td {
+                .table_body {
                   width: 675px;
                 }
             }
@@ -1251,25 +1248,45 @@
                               position: relative;
                               padding: 20px;
                               border-bottom: 1px solid #ddd;
-                              span {
-                                position: relative;
-                                margin-right: 20px;
-                                font-size: 13px;
-                              }
-                              .report {
-                                position: relative;
-                                font-size: 13px;
-                              }
-                              .report::before {
-                                content: '';
-                                display: inline-block;
-                                position: absolute;
-                                top: 2px;
-                                left: -10px;
-                                width: 1px;
-                                height: 10px;
-                                background-color: #888;
-                              }
+                                span {
+                                  position: relative;
+                                  margin-right: 20px;
+                                  font-size: 13px;
+                                }
+                                .report {
+                                  position: relative;
+                                  font-size: 13px;
+                                }
+                                .report::before {
+                                  content: '';
+                                  display: inline-block;
+                                  position: absolute;
+                                  top: 2px;
+                                  left: -10px;
+                                  width: 1px;
+                                  height: 10px;
+                                  background-color: #888;
+                                }
+                                .good {
+                                  position: absolute;
+                                  display: block;
+                                  padding: 10px 0;
+                                  top: 35px;
+                                  right: 50px;
+                                  width: 60px;
+                                  height: 35px;
+                                  border: 1px solid #ddd;
+                                  border-radius: 20px;                                   
+                                }
+                                .good::before {
+                                  content: '';
+                                  display: inline-block;
+                                  margin-right: 2px;
+                                  width: 17px;
+                                  height: 17px;
+                                  vertical-align: middle;
+                                  @include sprite-image("good_17x16_white", "icon")
+                                }
                                 .buyer {
                                   font-size: 0;
                                     .thumb {
@@ -1324,7 +1341,7 @@
                                   height: 70px;
                                     .thumb {
                                       display: inline-block;
-                                      vertical-align: middle;
+                                      vertical-align: top;
                                         img {
                                           width: 30px;
                                           height: 30px;
@@ -1334,38 +1351,22 @@
                                     }
                                     .seller_info {
                                       display: inline-block;
-                                      padding-bottom: 20px;
-                                      color: #888;
-                                        strong {
-                                          margin-right: 5px;
-                                          color: #000;
+                                        .seller_detail {
+                                          padding: 5px 0;
+                                          height: 40px;
+                                          color: #888;
+                                            strong {
+                                              margin-right: 5px;
+                                              color: #000;
+                                            }
                                         }
                                     }
-                                    .thank_text {
-                                      padding: 10px;
-                                      margin-left: 40px;
-                                      background-color: #ddd;
-                                    }
-                                }
-                                .good {
-                                  position: absolute;
-                                  padding: 10px 0;
-                                  top: 35px;
-                                  right: 50px;
-                                  width: 60px;
-                                  height: 35px;
-                                  text-align: right;
-                                  cursor: pointer;
-                                  border: 1px solid #ddd;
-                                  border-radius: 20px;
-                                    span::before {
-                                      content: '';
-                                      display: inline-block;
-                                      margin-right: 2px;
-                                      width: 17px;
-                                      height: 17px;
-                                      vertical-align: top;
-                                      @include sprite-image("good_17x16_white", "icon")
+                                    .seller_text {
+                                      text-align: left;
+                                        .thank_text {
+                                          padding: 10px;
+                                          background-color: #ddd;
+                                        }
                                     }
                                 }
                             }
@@ -1540,7 +1541,7 @@
                 }
                 table {
                   margin-top: 0;
-                    td {
+                    .table_body {
                       color: #222;
                         span {
                           line-height: 2;
@@ -1701,4 +1702,42 @@ footer {
         }
     }
 
+}
+
+
+
+
+
+//media guery
+
+
+@media (max-width: 1365px){
+  .inner {
+    width: 940px;
+  }
+  header {
+    min-width: 990px;
+      .hd_mid {
+          .category {
+              .cate_digital {
+                display: none;
+              }
+              .cate_kids {
+                display: none;
+              }
+          }
+      }
+      .hd_btm {
+          nav {
+              .manu_wrap {
+                width: 750px;
+                height: 45px;
+              }
+          }
+      }
+  }
+  
+  .content {
+    min-width: 990px;
+  }
 }

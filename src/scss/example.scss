@@ -1,15 +1,14 @@
 @import "./common/mixin.scss";
 @import "./sp/sp_mixin.scss";
 @import "./common/reset.scss";
-
+//grobal
+.active {
+  border: 2px solid #000;
+}
 .inner {
-  @include inner
+    @include inner
 }
-@media (min-width: 1365px){
-    .inner {
-      width: 1280px;
-    }
-}
+//body
  .hd_top {
    position: relative; 
    height: 36px; 
@@ -219,18 +218,18 @@
   nav {
     overflow: hidden;
     font-size: 0;
-      ul {
-        display: inline-block;
+      .manu_wrap {
+        float: left;
         color: transparent;
-          li {
-            float: left;
+          .manu {
+            display: inline-block;
               span {
                 display: block;
                 height: 15px;
                 background-image: url(../img/spSv_global.png); 
                 background-size: 423px 400px; 
               }
-              a {
+              .manu_detail {
                 display: block;
                 padding: 15px 8px;
                 width: 100%;
@@ -419,13 +418,13 @@
       .moreview {
         position: relative;
         height: 40px;
-          a {
+          .moreview_btn {
             font-size: 14px;
             position: absolute;
             right: 0;
             padding-right: 25px;
           }
-          a::after {
+          .moreview_btn::after {
             content: "";
             display: block;
             position: absolute;
@@ -542,18 +541,32 @@
         width: 1162px;
         height: 325px;
         margin: 0 auto;
-            button {
-              position: absolute;
-              top: 135px;
-              width: 60px;
-              height: 60px;
-              background-color: rgba(0,0,0,0.5);
-            }
-            .prev {
-              left: -60px;
-            }
-            .next {
-              right: -60px;
+            .list_visual_wrap {
+              position: relative;
+              margin: auto;
+              width: 1162px;
+              height: 325px;
+                .list_visual {
+                  overflow: hidden;
+                  width: 4648px;
+                    .item_visual {
+                      float: left;
+                      width: 1162px;
+                      height: 325px;
+                    }
+                    .no1 {
+                      background-image: url(../img/visual_01.jpeg);
+                    }
+                    .no2 {
+                      background-image: url(../img/visual_02.jpg);
+                    }
+                    .no3 {
+                      background-image: url(../img/visual_03.jpg);
+                    }
+                    .no4 {
+                      background-image: url(../img/visual_04.jpeg);
+                    }
+                }
             }
             .introduce {
               position: absolute;
@@ -579,29 +592,28 @@
                   font-size: 40px;
                 }
             }
-          .list_visual {
-            overflow: hidden;
-            width: 4648px;
-              .item_visual {
-                float: left;
-                width: 1162px;
-                height: 325px;
-
-              }
-              .no1 {
-                background-image: url(../img/visual_01.jpeg);
-              }
-              .no2 {
-                background-image: url(../img/visual_02.jpg);
-              }
-              .no3 {
-                background-image: url(../img/visual_03.jpg);
-              }
-              .no4 {
-                background-image: url(../img/visual_04.jpeg);
-              }
-          }
-      }
+            .arrow {
+              position: absolute;
+              top: 135px;
+              width: 60px;
+              height: 60px;
+              background-color: rgba(0,0,0,0.5);
+            }
+            .arrow::after {
+              content: '';
+              display: inline-block;
+              @include sprite-image("arrow_right_32x32_white", "icon")
+            }
+            .prev {
+              left: -60px;
+              transform: rotate(180deg);
+            }
+            .next {
+              right: -60px;
+            }
+        }
+          
+          
       .visual_nav {
         padding: 20px 0;
         background-color: #f6f6f6;
@@ -847,4 +859,86 @@ footer {
           background-position: -148px -253px;
         }
     }
+}
+
+
+
+
+
+//media query
+
+@media (max-width: 1365px){
+  .inner {
+    width: 940px;
+  }
+  header {
+    min-width: 990px;
+      .hd_mid {
+          .category {
+              .cate_digital {
+                display: none;
+              }
+              .cate_kids {
+                display: none;
+              }
+          }
+      }
+      .hd_btm {
+          nav {
+              .manu_wrap {
+                width: 750px;
+                height: 45px;
+              }
+          }
+      }
+  }
+  
+  .content {
+    min-width: 990px;
+      .visual {
+          .view_visual {
+              .list_visual_wrap {
+                width: 819px;
+                  .list_visual {
+                      .item_visual {
+                       width: 819px;
+                      }
+                  }
+              }
+          }
+      }
+      .section {
+          .list_art {
+              .item_art {
+                  .thumb {
+                    width: 177px;
+                  }
+              }
+              .item_art:nth-child(6) {
+                display: none;
+              }
+          }
+      }
+      .week {
+          .list_designer {
+              .item_designer {
+                width: 463px;
+              }
+              .no3 {
+                display: none;
+              }
+          }
+      }
+      .gallery {
+          .list_gallery {
+            margin: 0 auto;
+              .item_gallery {
+                width: 463px;
+              }
+              .no3 {
+                display: none;
+              }
+          }
+      }
+  }
 }
