@@ -424,7 +424,6 @@
       height: 100%;
     }
     .content_fix {
-      display: none;
       position: fixed;
       top: 0;
       right: 0;
@@ -1441,15 +1440,17 @@
                   border: 1px solid #ddd;
                   background-color: #fff;
                   vertical-align: bottom;
-                    .btn {
+                    &::after {
                       display: block;
                       position: absolute;
                       top: 14px;
                       right: 10px;
                       border: 6px solid transparent;
                       border-top-color: #888;
-                      
-                      
+                      content: '';
+                    }
+                    &.on::after {
+                      transform: rotate(180deg);
                     }
                 }
                 .filter_detail {

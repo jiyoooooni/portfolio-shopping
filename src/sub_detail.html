@@ -6,6 +6,8 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/sub_detail.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="module" src="js/sub_detail.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -172,7 +174,7 @@
       </div><!-- .hd_btm -->
     </header>
     <div class="content">
-      <div class="content_fix">
+      <div id="floating_bar_product" class="content_fix">
         <div class="content_inner">
           <div class="fix_wrap">
             <div class="thumb">
@@ -272,8 +274,8 @@
                   </strong>
                 </div>
                 <div class="delivery">
-                  <button class="selectbx">다른 배송방법 선택하기</button>
-                  <ul class="selectbx_detail">
+                  <button type="button" id="select_button_delivery" class="selectbx">다른 배송방법 선택하기</button>
+                  <ul id="select_menu_delivery" class="selectbx_detail">
                     <li class="selectbx_detail_list">
                       <a href="#" class="selectbx_detail_list_in">택배</a>
                     </li>
@@ -290,8 +292,8 @@
                   </p>
                 </div>
                 <div class="option">
-                    <button class="selectbx">액자</button>
-                    <ul class="selectbx_detail">
+                    <button type="button" id="select_button_option" class="selectbx" >액자</button>
+                    <ul id="select_menu_option" class="selectbx_detail">
                         <li class="selectbx_detail_list">
                           <a href="#" class="selectbx_detail_list_in">액자(유)(+80,000원)</a>
                         </li>
@@ -845,10 +847,8 @@
                       </div>
                       <span>OFF</span>
                     </div>
-                    <button class="filter">답변상태
-                      <span class="btn"></span>
-                    </button>
-                    <ul class="filter_detail">
+                    <button type="button" id="filter_button_qna" class="filter">답변상태</button>
+                    <ul id="filter_menu_qna" class="filter_detail">
                       <li class="filter_detail_list">
                         <a href="#">답변상태</a>
                       </li>

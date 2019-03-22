@@ -498,7 +498,6 @@ img {
 }
 
 .content .content_fix {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1712,13 +1711,18 @@ img {
   vertical-align: bottom;
 }
 
-.content .content_information .qna .buttonarea .filter .btn {
+.content .content_information .qna .buttonarea .filter::after {
   display: block;
   position: absolute;
   top: 14px;
   right: 10px;
   border: 6px solid transparent;
   border-top-color: #888;
+  content: '';
+}
+
+.content .content_information .qna .buttonarea .filter.on::after {
+  transform: rotate(180deg);
 }
 
 .content .content_information .qna .buttonarea .filter_detail {

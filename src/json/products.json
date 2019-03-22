@@ -1,0 +1,101 @@
+{
+    "items": [
+        {
+            "price": 800000,
+            "description": "꽃잔치, 이수동",
+            "shop": "갤러리세인",
+            "imageUrl": "img/today_artlist_no1.jpg",
+            "shopImageUrl": "img/sein_gallery.jpg"
+        },
+        {
+            "price": 27000,
+            "description": "Tin Tin Blanket, 에르제",
+            "shop": "라부",
+            "imageUrl": "img/today_artlist_no2.jpg",
+            "shopImageUrl": "img/labu_gallery.jpg"
+        },
+        {
+            "price": 800000,
+            "description": "꽃잔치, 이수동",
+            "shop": "갤러리세인",
+            "imageUrl": "img/today_artlist_no1.jpg",
+            "shopImageUrl": "img/sein_gallery.jpg"
+        },
+        {
+            "price": 27000,
+            "description": "Tin Tin Blanket, 에르제",
+            "shop": "라부",
+            "imageUrl": "img/today_artlist_no2.jpg",
+            "shopImageUrl": "img/labu_gallery.jpg"
+        },
+        {
+            "price": 800000,
+            "description": "꽃잔치, 이수동",
+            "shop": "갤러리세인",
+            "imageUrl": "img/today_artlist_no1.jpg",
+            "shopImageUrl": "img/sein_gallery.jpg"
+        },
+        {
+            "price": 27000,
+            "description": "Tin Tin Blanket, 에르제",
+            "shop": "라부",
+            "imageUrl": "img/today_artlist_no2.jpg",
+            "shopImageUrl": "img/labu_gallery.jpg"
+        },
+        {
+            "price": 800000,
+            "description": "꽃잔치, 이수동",
+            "shop": "갤러리세인",
+            "imageUrl": "img/today_artlist_no1.jpg",
+            "shopImageUrl": "img/sein_gallery.jpg"
+        },
+        {
+            "price": 27000,
+            "description": "Tin Tin Blanket, 에르제",
+            "shop": "라부",
+            "imageUrl": "img/today_artlist_no2.jpg",
+            "shopImageUrl": "img/labu_gallery.jpg"
+        },{
+            "price": 800000,
+            "description": "꽃잔치, 이수동",
+            "shop": "갤러리세인",
+            "imageUrl": "img/today_artlist_no1.jpg",
+            "shopImageUrl": "img/sein_gallery.jpg"
+        },
+        {
+            "price": 27000,
+            "description": "Tin Tin Blanket, 에르제",
+            "shop": "라부",
+            "imageUrl": "img/today_artlist_no2.jpg",
+            "shopImageUrl": "img/labu_gallery.jpg"
+        },
+        {
+            "price": 800000,
+            "description": "꽃잔치, 이수동",
+            "shop": "갤러리세인",
+            "imageUrl": "img/today_artlist_no1.jpg",
+            "shopImageUrl": "img/sein_gallery.jpg"
+        },
+        {
+            "price": 27000,
+            "description": "Tin Tin Blanket, 에르제",
+            "shop": "라부",
+            "imageUrl": "img/today_artlist_no2.jpg",
+            "shopImageUrl": "img/labu_gallery.jpg"
+        },
+        {
+            "price": 800000,
+            "description": "꽃잔치, 이수동",
+            "shop": "갤러리세인",
+            "imageUrl": "img/today_artlist_no1.jpg",
+            "shopImageUrl": "img/sein_gallery.jpg"
+        },
+        {
+            "price": 27000,
+            "description": "Tin Tin Blanket, 에르제",
+            "shop": "라부",
+            "imageUrl": "img/today_artlist_no2.jpg",
+            "shopImageUrl": "img/labu_gallery.jpg"
+        }
+    ]
+}
