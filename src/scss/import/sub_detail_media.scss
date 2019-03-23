@@ -1,0 +1,29 @@
+@media (max-width: 1365px){
+    .inner {
+      width: 940px;
+    }
+    header {
+      min-width: 990px;
+        .hd_mid {
+            .category {
+                .cate_digital {
+                  display: none;
+                }
+                .cate_kids {
+                  display: none;
+                }
+            }
+        }
+        .hd_btm {
+            nav {
+                .menu_wrap {
+                  width: 750px;
+                  height: 45px;
+                }
+            }
+        }
+    }
+    .content {
+        min-width: 990px;
+    }
+}

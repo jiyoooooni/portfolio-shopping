@@ -1,0 +1,76 @@
+
+ @media (max-width: 1365px){
+    .inner {
+      width: 940px;
+    }
+    header {
+      min-width: 990px;
+        .hd_mid {
+            .category {
+                .cate_digital {
+                  display: none;
+                }
+                .cate_kids {
+                  display: none;
+                }
+            }
+        }
+        .hd_btm {
+            nav {
+                .menu_wrap {
+                  width: 750px;
+                  height: 45px;
+                }
+            }
+        }
+    }
+
+    .content {
+      min-width: 990px;
+        .visual {
+            .view_visual {
+                .list_visual_wrap {
+                  width: 819px;
+                    .list_visual {
+                        .item_visual {
+                        width: 819px;
+                        }
+                    }
+                }
+            }
+        }
+        .section {
+            .list_art {
+                .item_art {
+                    .thumb {
+                      width: 177px;
+                    }
+                }
+                .item_art:nth-child(6) {
+                  display: none;
+                }
+            }
+        }
+        .week {
+            .list_designer {
+                .item_designer {
+                  width: 463px;
+                }
+                .no3 {
+                  display: none;
+                }
+            }
+        }
+        .gallery {
+            .list_gallery {
+              margin: 0 auto;
+                .item_gallery {
+                  width: 463px;
+                }
+                .no3 {
+                  display: none;
+                }
+            }
+        }
+    }
+}
