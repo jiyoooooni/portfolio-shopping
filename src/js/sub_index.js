@@ -3,8 +3,8 @@ import CardList from "./common/CardList.js"
 const productCardList = new CardList({
     $wrap: $('#art_products'),
     data: [],
-    template: _.template(`<li class="art_list">
-    <a href="#">
+    template: _.template(`<li class="item_art">
+    <a href="#" class="item_art_in">
       <div class="thumb">
         <img src="<%= imageUrl %>" alt="">
         <button type="button">

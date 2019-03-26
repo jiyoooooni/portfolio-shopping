@@ -13,6 +13,8 @@ class FloatingBar {
         $window.on('scroll', function () {
             if (that.scrollTop < $window.scrollTop()) {
                 that.$bar.show();
+            } else {
+                that.$bar.hide()
             }
         });
     }

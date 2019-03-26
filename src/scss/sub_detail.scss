@@ -27,7 +27,7 @@
           font-weight: bold;
           line-height: 45px;
           background-color: #f3f5f7;
-            a {
+            .tab_nav_in {
               display: block;
             }
         }
@@ -117,7 +117,7 @@
         .content_header_category {
           float: left;
           margin-left: 25px;
-            a {
+            .content_header_category_in {
               vertical-align: middle;
               line-height: 54px;
               color: #666;
@@ -148,7 +148,7 @@
           float: right;
           margin-top: 13px;
           font-size: 0;
-            a {
+            .content_header_route_in {
               display: inline-block;
               width: 28px;
               height: 28px;
@@ -200,14 +200,13 @@
                           display: none;
                           position: absolute;
                         }
-                        button {
+                        .itembtn {
                           display: none;
                           position: absolute;
                           top: 50%;
                           margin-top: -16.5px;
                           width: 23px;
                           height: 33px;
-                          background-color: red;
                         }
                         .prev {
                           @include sprite-image("arrow_left_32x32_black", "icon");
@@ -278,15 +277,13 @@
                 .title {
                   padding-bottom: 15px;
                   border-bottom: 1px solid #ddd;
-                    strong {
-                      font-size: 27px;
-                        .price {
-                          display: block;
-                          margin-top: 10px;
-                          color: #89bb6d;
-                          font-size: 23px;
+                  font-size: 27px;
+                    .price {
+                      display: block;
+                      margin-top: 10px;
+                      color: #89bb6d;
+                      font-size: 23px;
 
-                        }
                     }
                 }
                 .selectbx {
@@ -407,7 +404,7 @@
                     .buttonbx {
                       font-size: 0;
                       text-align: center;
-                        button {
+                        .buttonbx_btn {
                           display: inline-block;
                           margin: 2px;
                           width: 220px;
@@ -415,7 +412,7 @@
                           color: #fff;
                           font-size: 16px;
                         }
-                        .no1 {
+                        .top:nth-of-type(1) {
                           background-color: #3fc910;
                             .text {
                               position: relative;
@@ -431,7 +428,7 @@
                               @include sprite-image("home_21x21_white", "icon")
                             }
                         }
-                        .no2 {
+                        .top:nth-of-type(2) {
                           color: #222;
                           border: 1px solid #ddd;
                             .text {
@@ -448,10 +445,10 @@
                               @include sprite-image("tak_25x25_white", "icon")
                             }
                         }
-                        .no3 {
+                        .bottom:nth-of-type(1) {
                           background-color: #555;
                         }
-                        .no4 {
+                        .bottom:nth-of-type(2) {
                           background-color: #555;
                         }
                     }
@@ -497,23 +494,23 @@
                           vertical-align: middle;
                           @include sprite-image("naverpoint_50x19_green", "icon");
                         }
-                        a {
+                        .pointbx_in {
                           display: block;
                         }
                         .point {
                           color: #3fc910;
                         }
                     }
-                    dl {
+                    .definition {
                       padding: 15px 0;
-                        dt {
+                        .definition_title {
                           display: inline-block;
                           position: relative;
                           margin: 10px 0 0 20px; 
                           width: 100px;
                           color: #888;
                         }
-                        dt::before {
+                        .definition_title::before {
                           content: "";
                           display: block;
                           position: absolute;
@@ -526,7 +523,7 @@
 
 
                         }
-                        dd{
+                        .definition_info {
                           display: inline-block;
                           width: 310px;
 
@@ -539,7 +536,7 @@
           margin: 40px auto 0;
           border: 1px solid #ddd;
           width: 1020px;
-            a {
+            .event_in {
               display: block;
                 img {
                   width: 1018px;
@@ -568,10 +565,10 @@
             .title {
               font-size: 25px;
             }
-            p {
+            .title_text {
               padding: 20px 0 0;
               color: #888;
-                a {
+              .title_text_in {
                   color: #000;
                   text-decoration: underline;
                 }
@@ -686,7 +683,7 @@
                           text-align: center;                          
                         }
                     }
-                    .no1 {
+                    .bx:nth-of-type(1) {
                       margin-left: 150px;
                         .star_wrap {
                           font-size: 0;
@@ -715,7 +712,7 @@
                             }
                         }
                     }
-                    .no2 {
+                    .bx:nth-of-type(2) {
                       font-size: 0;
                       text-align: center;
                         .review_icon {
@@ -733,7 +730,7 @@
                           font-weight: bold;
                         }
                     }
-                    .no3 {
+                    .bx:nth-of-type(3) {
                         .bar_wrap {
                           font-size: 0;
                           text-align: center;
@@ -791,10 +788,13 @@
                           margin-left: 10px;
                         }
                         .review_photo_list {
-                            display: inline-block;
+                          display: inline-block;
                             img {
                               width: 120px;
                               height: 120px;
+                            }
+                            .review_photo_list_in {
+                              display: block;
                             }
                         }
                     }
@@ -812,7 +812,7 @@
                           float: right;
                           color: #888;
                           font-size: 0;
-                            a {
+                            .filter_in {
                               display: inline-block;
                               position: relative;
                               margin-left: 20px;
@@ -1009,7 +1009,7 @@
               @include clearfix
               padding: 15px 0 0;
               font-size: 0;
-                button {
+                .buttonarea_btn {
                   display: inline-block;
                   padding: 10px 17px;
                   font-size: 13px;
@@ -1091,7 +1091,7 @@
                   background-color: #fff;
                   border: 1px solid #888;
                     .filter_detail_list {
-                        a {
+                        .filter_detail_list_in {
                           padding: 7px;
                           display: block;
                           height: 33px;
@@ -1100,7 +1100,7 @@
                         }
                     }
                     .filter_detail_list:hover {
-                        a {
+                        .filter_detail_list_in {
                           color: #6b90dc;
                           font-weight: bold;
                           background-color: #f5f7fc;
@@ -1110,9 +1110,9 @@
                 }
             }
             .noticearea {
-                ul {
+                .notice_wrap {
                   font-size: 0;
-                    li {
+                    .notice_list {
                       border-bottom: 1px solid #ddd;
                         .notice {
                           display: inline-block;
@@ -1169,7 +1169,7 @@
                 .table_title {
                   margin-bottom: 15px;
                 }
-                table {
+                .return_table {
                   margin-top: 0;
                     .table_body {
                       color: #222;
@@ -1194,15 +1194,15 @@
                           color: #000;
                         }
                     }
-                    p {
+                    .naver_service_text {
                       margin-top: 5px;
                       color: #666;
                       line-height: 18px;
-                        a {
+                        .naver_service_text_in {
                           color: #000;
                           text-decoration: underline;
                         }
-                        a::after {
+                        .naver_service_text_in::after {
                           content: '>';
                         }
                     }
@@ -1250,12 +1250,12 @@
                   font-size: 12px;
                   background-color: #fcfcfc;
                   border: 1px solid #ddd;
-                    p {
+                    .precautions_service_text {
                       margin: 5px 0;
                       color: #888;
                       line-height: 1.5;;
                     }
-                    a {
+                    .servicebx_in {
                       padding: 2px 4px;
                       border: 1px solid #ddd;
                       background-color: #fff;

@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <title>네이버 아트윈도 copy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./css/example.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://naver.github.io/egjs-flicking/release/latest/dist/flicking.pkgd.min.js"></script>
+  <script type="module" src="js/index.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -193,28 +196,36 @@
       <div class="visual">
         <div class="view_visual">
           <div class="list_visual_wrap">
-            <ul class="list_visual">
-              <li class="item_visual" style="background-image: url(../img/visual_01.jpeg)">
-              <span class="blind">화제작가 슈퍼픽션 그림에서 굿즈까지</span>
-            </li>
-              <li class="item_visual" style="background-image: url(../img/visual_02.jpg)">
-              <span class="blind">아트윈도 베스트 빈센트 반 고흐를 담은 작품</span>
-            </li>
-              <li class="item_visual" style="background-image: url(../img/visual_03.jpg)">
-              <span class="blind">화제작가 전통자개를 생활에, 이현경</span>
-            </li>
-              <li class="item_visual" style="background-image: url(../img/visual_01.jpeg)">
-              <span class="blind">아트윈도 베스트 그림으로~ 트렌디한 내 방!</span>
-            </li>
+            <ul id="banner-flicking-wrap" class="list_visual">
+              <li class="item_visual">
+                <div class="bg" style="background-image: url(../img/visual_01.jpeg)">
+                  <span class="blind">화제작가 슈퍼픽션 그림에서 굿즈까지</span>
+                </div>
+              </li>
+              <li class="item_visual">
+                <div class="bg" style="background-image: url(../img/visual_02.jpeg)">
+                  <span class="blind">아트윈도 베스트 빈센트 반 고흐를 담은 작품</span>
+                </div>
+              </li>
+              <li class="item_visual">
+                <div class="bg" style="background-image: url(../img/visual_03.jpeg)">
+                  <span class="blind">화제작가 전통자개를 생활에, 이현경</span>
+                </div>
+              </li>
+              <li class="item_visual">
+                <div class="bg" style="background-image: url(../img/visual_04.jpeg)">
+                  <span class="blind">아트윈도 베스트 그림으로~ 트렌디한 내 방!</span>
+                </div>
+              </li>
             </ul>
             <div class="introduce">
-              <span class="banner">화제작가</span>
-              <strong>슈퍼픽션<br/>그림에서 굿즈까지</strong>
+              <span class="banner" id="banner_title">아트윈도<br/>베스트</span>
+              <strong id="banner_desc">국내외 유명작가<br/>사진 쇼핑!</strong>
             </div>
-            <button type="button" class="arrow prev">
+            <button type="button" id="btn_prev_banner" class="arrow prev">
               <span class="blind">비쥬얼 사진 넘김 버튼</span>
             </button>
-            <button type="button" class="arrow next">
+            <button type="button" id="btn_next_banner" class="arrow next">
               <span class="blind">비쥬얼 사진 넘김 버튼</span>
             </button>
          </div>
