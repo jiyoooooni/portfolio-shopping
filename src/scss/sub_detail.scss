@@ -876,93 +876,109 @@
                               position: relative;
                               padding: 20px;
                               border-bottom: 1px solid #ddd;
-                                span {
-                                  position: relative;
-                                  margin-right: 20px;
-                                  font-size: 13px;
-                                }
-                                .report {
-                                  position: relative;
-                                  font-size: 13px;
-                                }
-                                .report::before {
-                                  content: '';
-                                  display: inline-block;
-                                  position: absolute;
-                                  top: 2px;
-                                  left: -10px;
-                                  width: 1px;
-                                  height: 10px;
-                                  background-color: #888;
+                                .review_notice_buyer {
+                                  display: flex;
+                                    .buyer_info_text {
+                                      position: relative;
+                                      margin-right: 20px;
+                                      font-size: 13px;
+                                    }
+                                    .report {
+                                      position: relative;
+                                      font-size: 13px;
+                                    }
+                                    .report::before {
+                                      content: '';
+                                      display: inline-block;
+                                      position: absolute;
+                                      top: 2px;
+                                      left: -10px;
+                                      width: 1px;
+                                      height: 10px;
+                                      background-color: #888;
+                                    }
+                                    .buyer {
+                                      flex: 1;
+                                      font-size: 0;
+                                      vertical-align: middle;
+                                        .thumb {
+                                          display: inline-block;
+                                          img {
+                                            width: 30px;
+                                            height: 30px;
+                                            margin-right: 10px;
+                                            border-radius: 50%;
+                                          }
+                                        }
+                                        .buyer_info {
+                                          display: inline-block;
+                                            .star_list {
+                                              display: inline-block;
+                                              width: 14px;
+                                              height: 14px;
+                                              margin-right: 2px;
+                                              background: url(../img/spSw_product_detail_review_svg.svg) no-repeat -100px -26px;
+                                            }
+                                            .empty {
+                                              background-position: -100px -4px;
+                                            }
+                                            strong {
+                                              font-size: 15px;
+                                            }
+                                            p {
+                                              color: #888;
+                                              font-size: 0px;
+                                                span+span::before {
+                                                  content: '';
+                                                  display: inline-block;
+                                                  position: absolute;
+                                                  top: 7px;
+                                                  left: -12px;
+                                                  width: 2px;
+                                                  height: 2px;
+                                                  background-color: #888;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .thumb_product {
+                                      display: table-cell;
+                                      padding: 0 40px;
+                                        .thumb_product_in {
+                                          display: block;
+                                          width: 90px;
+                                          height: 90px;
+                                          background-size: cover;
+                                        }
+                                    }
+
+                                    .review_text {
+                                      margin: 15px 0 0 40px;
+                                      color: #888;
+                                      font-size: 14px;
+                                      line-height: 1.5;
+                                    }
                                 }
                                 .good {
-                                  position: absolute;
-                                  display: block;
+                                  position: relative;
+                                  display: flex;
                                   padding: 10px 0;
                                   top: 35px;
                                   right: 50px;
                                   width: 60px;
                                   height: 35px;
+                                  text-indent: 60px;
                                   border: 1px solid #ddd;
                                   border-radius: 20px;                                   
                                 }
                                 .good::before {
                                   content: '';
-                                  display: inline-block;
-                                  margin-right: 2px;
+                                  position: absolute;
+                                  top: 10px;
+                                  left: 10px;
                                   width: 17px;
                                   height: 17px;
-                                  vertical-align: middle;
                                   @include sprite-image("good_17x16_white", "icon")
-                                }
-                                .buyer {
-                                  font-size: 0;
-                                    .thumb {
-                                      display: inline-block;
-                                       img {
-                                         width: 30px;
-                                         height: 30px;
-                                         margin-right: 10px;
-                                         border-radius: 50%;
-                                       }
-                                    }
-                                    .buyer_info {
-                                      display: inline-block;
-                                        .star_list {
-                                          display: inline-block;
-                                          width: 14px;
-                                          height: 14px;
-                                          margin-right: 2px;
-                                          background: url(../img/spSw_product_detail_review_svg.svg) no-repeat -100px -26px;
-                                        }
-                                        .empty {
-                                          background-position: -100px -4px;
-                                        }
-                                        strong {
-                                          font-size: 15px;
-                                        }
-                                        p {
-                                          color: #888;
-                                          font-size: 0px;
-                                            span+span::before {
-                                              content: '';
-                                              display: inline-block;
-                                              position: absolute;
-                                              top: 7px;
-                                              left: -12px;
-                                              width: 2px;
-                                              height: 2px;
-                                              background-color: #888;
-                                            }
-                                            
-                                        }
-                                    }
-                                }
-                                .review_text {
-                                  margin: 15px 0 0 40px;
-                                  color: #888;
-                                  font-size: 14px;
-                                  line-height: 1.5;
                                 }
                                 .seller {
                                   margin-top: 10px;
@@ -1079,8 +1095,9 @@
                       content: '';
                     }
                     &.on::after {
+                      top: 7px;
                       transform: rotate(180deg);
-                    }
+                    } 
                 }
                 .filter_detail {
                   position: absolute;

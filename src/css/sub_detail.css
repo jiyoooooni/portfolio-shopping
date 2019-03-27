@@ -1563,18 +1563,22 @@ footer .copyright .logo {
   border-bottom: 1px solid #ddd;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list span {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer {
+  display: flex;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer_info_text {
   position: relative;
   margin-right: 20px;
   font-size: 13px;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .report {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .report {
   position: relative;
   font-size: 13px;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .report::before {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .report::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -1585,50 +1589,28 @@ footer .copyright .logo {
   background-color: #888;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .good {
-  position: absolute;
-  display: block;
-  padding: 10px 0;
-  top: 35px;
-  right: 50px;
-  width: 60px;
-  height: 35px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-}
-
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .good::before {
-  content: '';
-  display: inline-block;
-  margin-right: 2px;
-  width: 17px;
-  height: 17px;
-  vertical-align: middle;
-  width: 17px;
-  height: 16px;
-  background: transparent url(../img/sp/sp_icon.png) -64px -47px/114px 108px;
-}
-
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer {
+  flex: 1;
   font-size: 0;
+  vertical-align: middle;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer .thumb {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .thumb {
   display: inline-block;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer .thumb img {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .thumb img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
   border-radius: 50%;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer .buyer_info {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .buyer_info {
   display: inline-block;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer .buyer_info .star_list {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .buyer_info .star_list {
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -1636,20 +1618,20 @@ footer .copyright .logo {
   background: url(../img/spSw_product_detail_review_svg.svg) no-repeat -100px -26px;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer .buyer_info .empty {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .buyer_info .empty {
   background-position: -100px -4px;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer .buyer_info strong {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .buyer_info strong {
   font-size: 15px;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer .buyer_info p {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .buyer_info p {
   color: #888;
   font-size: 0px;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .buyer .buyer_info p span + span::before {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .buyer_info p span + span::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -1660,11 +1642,48 @@ footer .copyright .logo {
   background-color: #888;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_text {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .thumb_product {
+  display: table-cell;
+  padding: 0 40px;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .thumb_product .thumb_product_in {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .review_text {
   margin: 15px 0 0 40px;
   color: #888;
   font-size: 14px;
   line-height: 1.5;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .good {
+  position: relative;
+  display: flex;
+  padding: 10px 0;
+  top: 35px;
+  right: 50px;
+  width: 60px;
+  height: 35px;
+  text-indent: 60px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .good::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 17px;
+  height: 17px;
+  width: 17px;
+  height: 16px;
+  background: transparent url(../img/sp/sp_icon.png) -64px -47px/114px 108px;
 }
 
 .content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .seller {
@@ -1802,6 +1821,7 @@ footer .copyright .logo {
 }
 
 .content .content_information .qna .buttonarea .filter.on::after {
+  top: 7px;
   transform: rotate(180deg);
 }
 
