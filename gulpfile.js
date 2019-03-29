@@ -19,6 +19,7 @@ const paths = {
   src_css: fileName => paths.getAbs('./src/css', fileName),
   src_img: fileName => paths.getAbs('./src/img', fileName),
   src_js: fileName => paths.getAbs('./src/js', fileName),
+  src_json: fileName => paths.getAbs('./src/json', fileName),
   src_sp_img: fileName => paths.getAbs('./src/sp_img', fileName),
   dest_sp_img: fileName => paths.getAbs('./src/img/sp', fileName),
   dest_sp_scss: fileName => paths.getAbs('./src/scss/sp', fileName),
@@ -26,6 +27,7 @@ const paths = {
   dist_css: fileName => paths.getAbs('./docs/css', fileName),
   dist_img: fileName => paths.getAbs('./docs/img', fileName),
   dist_js: fileName => paths.getAbs('./docs/js', fileName),
+  dist_json: fileName => paths.getAbs('./docs/json', fileName),
   sp_scss_map_template: () => paths.getAbs('./sp_scss_map_template.hbs'),
   sp_scss_template: () => paths.getAbs('./sp_scss_template.hbs')
 };
@@ -121,6 +123,10 @@ function buildJsTask () {
   return gulp.src(paths.src_js('./**/*.js')).pipe(gulp.dest(paths.dist_js()));
 }
 
+function buildJsonTask () {
+  return gulp.src(paths.src_json('./**/*.json')).pipe(gulp.dest(paths.dist_json()));
+}
+
 /**
  * define tasks
  * - sass
@@ -130,7 +136,7 @@ function buildJsTask () {
 gulp.task('sass', sassTask);
 gulp.task('sprite', spriteTask);
 gulp.task('watch', gulp.series(sassTask, watchTask));
-gulp.task('build', gulp.parallel(buildHtmlTask, buildCssTask, buildImageTask, buildJsTask));
+gulp.task('build', gulp.parallel(buildHtmlTask, buildCssTask, buildImageTask, buildJsTask, buildJsonTask));
 
 /**
  * util functions
