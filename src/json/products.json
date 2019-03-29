@@ -1,6 +1,7 @@
 {
     "items": [
         {
+            "url": "./sub_detail.html",
             "price": "800,000원",
             "description": "꽃잔치, 이수동",
             "shop": "갤러리세인",
@@ -8,6 +9,7 @@
             "shopImageUrl": "img/sein_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "27,000원",
             "description": "Tin Tin Blanket, 에르제",
             "shop": "라부",
@@ -15,6 +17,7 @@
             "shopImageUrl": "img/labu_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "47,000원",
             "description": "Tea cup & Tray , 박연진",
             "shop": "클레이그라운드",
@@ -22,6 +25,7 @@
             "shopImageUrl": "img/ground_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "5,000원",
             "description": "에르제 땡땡의 모험 원색 가방 Tin TIn Bag",
             "shop": "라부",
@@ -29,6 +33,7 @@
             "shopImageUrl": "img/labu_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "1,000원",
             "description": "유선노트 노란나비",
             "shop": "국립박물관문화재단",
@@ -36,6 +41,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "7,000원",
             "description": "나전 종이필통",
             "shop": "국립박물관문화재단",
@@ -43,6 +49,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "18,000원",
             "description": "Heart of Love,1949, 마티스(Henri Matisse)",
             "shop": "아티쉬",
@@ -50,12 +57,15 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "12,000원",
             "description": "꽃나무와새 캔들홀더, 조명식 작가",
             "shop": "도자작가 조명식",
             "imageUrl": "img/today_artlist_no8.jpeg",
             "shopImageUrl": "img/public_gallery.jpg"
-        },{
+        },
+        {
+            "url": "./sub_detail.html",
             "price": "19,000원",
             "description": "꽃잎 물잔, 박연진",
             "shop": "클레이그라운드",
@@ -63,6 +73,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "47,000원",
             "description": "Tea cup & Tray , 박연진",
             "shop": "클레이그라운드",
@@ -70,6 +81,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "12,000원",
             "description": "오색 복주머니, 박진숙 작가",
             "shop": "Dh셀렉트숍",
@@ -77,6 +89,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "13,600원",
             "description": "[디저트포크] LEAPICK 리픽, 사라주 (SARAJOO)",
             "shop": "MSG아트앤디자인",
@@ -84,6 +97,7 @@
             "shopImageUrl": "img/labu_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "12,000원",
             "description": "Happy, 에바 알머슨(Eva Armisen)",
             "shop": "아티쉬",
@@ -91,6 +105,7 @@
             "shopImageUrl": "img/sein_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "69,000원",
             "description": "민화샵 민화 마우스패드",
             "shop": "민화",
@@ -98,6 +113,7 @@
             "shopImageUrl": "img/labu_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "10,000원",
             "description": "특별한 양장수첩_나전",
             "shop": "국립박물관문화재단",
@@ -105,6 +121,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "30,000원",
             "description": "나무와 새, 조명식 작가",
             "shop": "도자작가 조명식",
@@ -112,6 +129,7 @@
             "shopImageUrl": "img/labu_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "12,000원",
             "description": "오색 복주머니, 박진숙 작가",
             "shop": "Dh셀렉트숍",
@@ -119,6 +137,7 @@
             "shopImageUrl": "img/labu_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "59,000원",
             "description": "고은 달임주전자 小, 최진선 작가",
             "shop": "Dh셀렉트숍",
@@ -126,6 +145,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "30,000원",
             "description": "단아 꽃잔 선물 세트, 신경욱",
             "shop": "아리아프로젝트",
@@ -133,6 +153,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "12,000원",
             "description": "파랑새잔세트, 가치(최희진,오주연)",
             "shop": "가치",
@@ -140,6 +161,7 @@
             "shopImageUrl": "img/public_gallery.jpg"
         },
         {
+            "url": "./sub_detail.html",
             "price": "64,000원",
             "description": "작가와 하루작업] 이지훈 작가의 '도시 그리기 2'",
             "shop": "퍼블릭갤러리",

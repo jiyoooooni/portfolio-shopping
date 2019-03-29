@@ -18,12 +18,14 @@ const paths = {
   src_scss: fileName => paths.getAbs('./src/scss', fileName),
   src_css: fileName => paths.getAbs('./src/css', fileName),
   src_img: fileName => paths.getAbs('./src/img', fileName),
+  src_js: fileName => paths.getAbs('./src/js', fileName),
   src_sp_img: fileName => paths.getAbs('./src/sp_img', fileName),
   dest_sp_img: fileName => paths.getAbs('./src/img/sp', fileName),
   dest_sp_scss: fileName => paths.getAbs('./src/scss/sp', fileName),
   dist_html: fileName => paths.getAbs('./docs', fileName),
   dist_css: fileName => paths.getAbs('./docs/css', fileName),
   dist_img: fileName => paths.getAbs('./docs/img', fileName),
+  dist_js: fileName => paths.getAbs('./docs/js', fileName),
   sp_scss_map_template: () => paths.getAbs('./sp_scss_map_template.hbs'),
   sp_scss_template: () => paths.getAbs('./sp_scss_template.hbs')
 };
@@ -107,7 +109,16 @@ function buildCssTask () {
 }
 
 function buildImageTask () {
-  return gulp.src([paths.src_img('./**/*.png'), paths.src_img('./**/*.jpg')]).pipe(gulp.dest(paths.dist_img()));
+  return gulp.src([
+    paths.src_img('./**/*.png'),
+    paths.src_img('./**/*.jpeg'),
+    paths.src_img('./**/*.jpg'),
+    paths.src_img('./**/*.svg')
+  ]).pipe(gulp.dest(paths.dist_img()));
+}
+
+function buildJsTask () {
+  return gulp.src(paths.src_js('./**/*.js')).pipe(gulp.dest(paths.dist_js()));
 }
 
 /**
@@ -119,7 +130,7 @@ function buildImageTask () {
 gulp.task('sass', sassTask);
 gulp.task('sprite', spriteTask);
 gulp.task('watch', gulp.series(sassTask, watchTask));
-gulp.task('build', gulp.parallel(buildHtmlTask, buildCssTask, buildImageTask));
+gulp.task('build', gulp.parallel(buildHtmlTask, buildCssTask, buildImageTask, buildJsTask));
 
 /**
  * util functions
