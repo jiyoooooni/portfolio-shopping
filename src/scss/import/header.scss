@@ -216,10 +216,9 @@ header {
           font-size: 0;
             .menu_wrap {
                 float: left;
-                color: transparent;
                 .menu {
                     display: inline-block;
-                    span {
+                    .menu_in {
                         display: block;
                         height: 15px;
                         background-image: url(../img/spSv_global.png); 
@@ -233,84 +232,84 @@ header {
                     }
                 }
                 .menu:nth-of-type(1) {
-                    span {
+                    .menu_in {
                         width: 15px;
                         background-position: -81px -364px;
                     }
                 }
                 .menu:nth-of-type(2) {
-                    span {
+                    .menu_in {
                     width: 61px;
                     background-position: -292px -57px;
                     }
                 }
                 .menu:nth-of-type(3) {
-                    span {
+                    .menu_in {
                         width: 61px;
                         background-position: -202px -271px;
                     }
                 }
                 .menu:nth-of-type(4) {
-                    span {
+                    .menu_in {
                         width: 61px;
                         background-position: -292px -19px;
                     }
                 }
                 .menu:nth-of-type(5) {
-                    span {
+                    .menu_in {
                         width: 73px;
                         background-position: -54px -234px;
                     }
                 }
                 .menu:nth-of-type(6) {
-                    span {
+                    .menu_in {
                         width: 51px;
                         background-position: -0px -308px;
                     }
                 }
                 .menu:nth-of-type(7) {
-                    span {
+                    .menu_in {
                         width: 51px;
                         background-position: -54px -327px;
                     }
                 }
                 .menu:nth-of-type(8) {
-                    span {
+                    .menu_in {
                         width: 51px;
                         background-position: -108px -327px;
                     }
                 }
                 .menu:nth-of-type(9) {
-                    span {
+                    .menu_in {
                         width: 51px;
                         background-position: -220px -308px;
                     }
                 }
                 .menu:nth-of-type(10) {
-                    span {
+                    .menu_in {
                         width: 38px;
                         background-position: -358px -305px;
                     }
                 }
                 .menu:nth-of-type(11) {
-                    span {
+                    .menu_in {
                         width: 64px;
                         background-position: -68px -271px;
                     }
                 }
                 .menu:nth-of-type(12) {
-                    span {
+                    .menu_in {
                         width: 51px;
                     }
                 }
                 .menu:nth-of-type(13) {
-                    span {
+                    .menu_in {
                         position: relative;
                         margin-left: 20px;
                         width: 27px;
                         background-position: -31px -364px;
                     }
-                    span::before {
+                    .menu_in::before {
                         content: "";
                         display: block;
                         position: absolute;
@@ -322,24 +321,24 @@ header {
                     }
                 }
                 .menu:nth-of-type(14) {
-                    span {
+                    .menu_in {
                         width: 51px;
                         background-position: -235px -215px;
                     }
                 }
                 .menu:nth-of-type(15) {
-                    span {
+                    .menu_in {
                         width: 37px;
                         background-position: -244px -136px;
                     }
                 }
                 .on {
-                    span {
+                    .menu_in {
                         position: relative;
                         width: 51px;
                         background-position: -55px -308px;
                     }
-                    span::after {
+                    .menu_in::after {
                         content: '';
                         display: block;
                         position: absolute;

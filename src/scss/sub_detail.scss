@@ -900,7 +900,6 @@
                                     .buyer {
                                       flex: 1;
                                       font-size: 0;
-                                      vertical-align: middle;
                                         .thumb {
                                           display: inline-block;
                                           img {
@@ -959,18 +958,33 @@
                                       line-height: 1.5;
                                     }
                                 }
-                                .good {
-                                  position: relative;
-                                  display: flex;
-                                  padding: 10px 0;
-                                  top: 35px;
-                                  right: 50px;
-                                  width: 60px;
-                                  height: 35px;
-                                  text-indent: 60px;
-                                  border: 1px solid #ddd;
-                                  border-radius: 20px;                                   
+                                .click_review_wrap {
+                                  display: block;
+                                  width: 480px;
+                                  margin: 20px 0 0 35px;
+                                    .click_review_list {
+                                      margin-bottom: 30px;
+                                      img {
+                                        width: 100%;
+                                        height: auto;
+                                      }
+                                    }
                                 }
+                                .goodbtn {
+                                  padding: 30px;
+                                    .good {
+                                      position: relative;
+                                      display: flex;
+                                      padding: 10px 0;
+                                      width: 60px;
+                                      height: 35px;
+                                      text-indent: 60px;
+                                      border: 1px solid #ddd;
+                                      border-radius: 20px;      
+                                      background-color: #fff;                             
+                                    }
+                                }
+                                
                                 .good::before {
                                   content: '';
                                   position: absolute;
@@ -1011,6 +1025,14 @@
                                           padding: 10px;
                                           background-color: #ddd;
                                         }
+                                    }
+                                }
+                            }
+                            .check {
+                              background-color: #f3f5f7;
+                                .review_notice_buyer {
+                                    .thumb_product {
+                                      display: none;
                                     }
                                 }
                             }

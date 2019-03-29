@@ -43,3 +43,9 @@ deliverySelectBox.init();
 optionSelectBox.init();
 qnaFilter.init();
 productFloatingBar.init();
+
+$('#section_review').on('click', '.review_notice_list', function (e) {
+    e.preventDefault();
+
+    $(this).toggleClass('check');
+});

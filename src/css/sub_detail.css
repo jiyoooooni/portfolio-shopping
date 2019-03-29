@@ -296,14 +296,13 @@ header .hd_btm nav {
 
 header .hd_btm nav .menu_wrap {
   float: left;
-  color: transparent;
 }
 
 header .hd_btm nav .menu_wrap .menu {
   display: inline-block;
 }
 
-header .hd_btm nav .menu_wrap .menu span {
+header .hd_btm nav .menu_wrap .menu .menu_in {
   display: block;
   height: 15px;
   background-image: url(../img/spSv_global.png);
@@ -317,73 +316,73 @@ header .hd_btm nav .menu_wrap .menu .menu_detail {
   height: 100%;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(1) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(1) .menu_in {
   width: 15px;
   background-position: -81px -364px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(2) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(2) .menu_in {
   width: 61px;
   background-position: -292px -57px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(3) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(3) .menu_in {
   width: 61px;
   background-position: -202px -271px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(4) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(4) .menu_in {
   width: 61px;
   background-position: -292px -19px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(5) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(5) .menu_in {
   width: 73px;
   background-position: -54px -234px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(6) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(6) .menu_in {
   width: 51px;
   background-position: -0px -308px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(7) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(7) .menu_in {
   width: 51px;
   background-position: -54px -327px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(8) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(8) .menu_in {
   width: 51px;
   background-position: -108px -327px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(9) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(9) .menu_in {
   width: 51px;
   background-position: -220px -308px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(10) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(10) .menu_in {
   width: 38px;
   background-position: -358px -305px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(11) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(11) .menu_in {
   width: 64px;
   background-position: -68px -271px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(12) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(12) .menu_in {
   width: 51px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(13) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(13) .menu_in {
   position: relative;
   margin-left: 20px;
   width: 27px;
   background-position: -31px -364px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(13) span::before {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(13) .menu_in::before {
   content: "";
   display: block;
   position: absolute;
@@ -394,23 +393,23 @@ header .hd_btm nav .menu_wrap .menu:nth-of-type(13) span::before {
   background-color: #ddd;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(14) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(14) .menu_in {
   width: 51px;
   background-position: -235px -215px;
 }
 
-header .hd_btm nav .menu_wrap .menu:nth-of-type(15) span {
+header .hd_btm nav .menu_wrap .menu:nth-of-type(15) .menu_in {
   width: 37px;
   background-position: -244px -136px;
 }
 
-header .hd_btm nav .menu_wrap .on span {
+header .hd_btm nav .menu_wrap .on .menu_in {
   position: relative;
   width: 51px;
   background-position: -55px -308px;
 }
 
-header .hd_btm nav .menu_wrap .on span::after {
+header .hd_btm nav .menu_wrap .on .menu_in::after {
   content: '';
   display: block;
   position: absolute;
@@ -1592,7 +1591,6 @@ footer .copyright .logo {
 .content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer {
   flex: 1;
   font-size: 0;
-  vertical-align: middle;
 }
 
 .content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .review_notice_buyer .buyer .thumb {
@@ -1661,17 +1659,35 @@ footer .copyright .logo {
   line-height: 1.5;
 }
 
-.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .good {
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .click_review_wrap {
+  display: block;
+  width: 480px;
+  margin: 20px 0 0 35px;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .click_review_wrap .click_review_list {
+  margin-bottom: 30px;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .click_review_wrap .click_review_list img {
+  width: 100%;
+  height: auto;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .goodbtn {
+  padding: 30px;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .goodbtn .good {
   position: relative;
   display: flex;
   padding: 10px 0;
-  top: 35px;
-  right: 50px;
   width: 60px;
   height: 35px;
   text-indent: 60px;
   border: 1px solid #ddd;
   border-radius: 20px;
+  background-color: #fff;
 }
 
 .content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .good::before {
@@ -1725,6 +1741,14 @@ footer .copyright .logo {
 .content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .review_notice_list .seller .seller_text .thank_text {
   padding: 10px;
   background-color: #ddd;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .check {
+  background-color: #f3f5f7;
+}
+
+.content .content_information .review .reviewbx .reviewbx_head .reviewbx_head_bottom .review_notice_wrap .check .review_notice_buyer .thumb_product {
+  display: none;
 }
 
 .content .content_information .qna {
