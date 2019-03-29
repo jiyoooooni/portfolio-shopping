@@ -1,9 +1,7 @@
 # Portfolio : naver shopping - art window imitation
 
 ## View URL
-~~~
 https://jiyoooooni.github.io/portfolio-shopping/
-~~~
 
 ## Start Dev Environment
 we set environment using gulp.js
