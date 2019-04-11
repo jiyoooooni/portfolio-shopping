@@ -11,6 +11,9 @@
 .inner {
     @include inner
 }
+.hd_btm {
+  border-bottom: 1px solid #ddd;
+}
 .content {
     .tab_nav {
         .nav_wrap {

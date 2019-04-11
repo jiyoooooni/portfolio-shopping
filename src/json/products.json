@@ -33,6 +33,12 @@
             "shopImageUrl": "img/labu_gallery.jpg"
         },
         {
+            "type": "event",
+            "imageUrl": "img/today_artlist_no9.jpg",
+            "title": "인물을 표현하는<br/>작가들의 방법",
+            "description": "회화 작품으로 보는 우리들의<br/>초상화"
+        },
+        {
             "url": "./sub_detail.html",
             "price": "1,000원",
             "description": "유선노트 노란나비",
@@ -71,6 +77,12 @@
             "shop": "클레이그라운드",
             "imageUrl": "img/today_artlist_no10.jpg",
             "shopImageUrl": "img/public_gallery.jpg"
+        },
+        {
+            "type": "event",
+            "imageUrl": "img/today_artlist_no9.jpg",
+            "title": "인물을 표현하는<br/>작가들의 방법",
+            "description": "회화 작품으로 보는 우리들의<br/>초상화"
         },
         {
             "url": "./sub_detail.html",
@@ -151,6 +163,12 @@
             "shop": "아리아프로젝트",
             "imageUrl": "img/today_artlist_no22.jpg",
             "shopImageUrl": "img/public_gallery.jpg"
+        },
+        {
+            "type": "event",
+            "imageUrl": "img/today_artlist_no9.jpg",
+            "title": "인물을 표현하는<br/>작가들의 방법",
+            "description": "회화 작품으로 보는 우리들의<br/>초상화"
         },
         {
             "url": "./sub_detail.html",

@@ -532,6 +532,10 @@ footer .copyright .logo {
   height: 100%;
 }
 
+.hd_btm {
+  border-bottom: 1px solid #ddd;
+}
+
 .content .tab_nav .nav_wrap {
   font-size: 0;
   border-bottom: 1px solid #000;

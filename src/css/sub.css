@@ -541,7 +541,7 @@ footer .copyright .logo {
   border-top: 2px solid black;
 }
 
-.content .section .section_title .on {
+.content .section .section_title .check {
   position: absolute;
   top: 0;
   right: 0;
@@ -550,7 +550,7 @@ footer .copyright .logo {
   font-size: 14px;
 }
 
-.content .section .section_title .on::after {
+.content .section .section_title .check::after {
   content: "";
   position: absolute;
   display: block;
@@ -880,13 +880,13 @@ footer .copyright .logo {
   .content {
     min-width: 990px;
   }
-  .content .section .art_wrap .art_list .thumb {
+  .content .section .list_art .item_art .thumb {
     width: 178px;
   }
-  .content .section .art_wrap .art_list .info {
+  .content .section .list_art .item_art .info {
     width: 178px;
   }
-  .content .section .art_wrap .event .eventbx {
+  .content .section .list_art .event .eventbx {
     width: 178px;
   }
 }

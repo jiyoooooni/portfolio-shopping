@@ -974,7 +974,7 @@ footer .copyright .logo {
   color: #666;
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1364px) {
   .inner {
     width: 940px;
   }
@@ -994,11 +994,17 @@ footer .copyright .logo {
   .content {
     min-width: 990px;
   }
-  .content .visual .view_visual .list_visual_wrap {
-    width: 819px;
-  }
   .content .visual .view_visual .list_visual_wrap .list_visual .item_visual {
     width: 819px;
+  }
+  .content .visual .view_visual .introduce {
+    margin-left: -410px;
+  }
+  .content .visual .view_visual .prev {
+    margin-left: -470px;
+  }
+  .content .visual .view_visual .next {
+    margin-right: -469px;
   }
   .content .section .list_art .item_art .thumb {
     width: 177px;

@@ -12,7 +12,7 @@
 <body>
   <div id="wrap">
     <header>
-      <div class="hd_top">
+      <div class="hd_top" role="banner">
         <div class="inner">
             <h2 class="naver">
               <a href="#" class="hd_top_in">
@@ -42,13 +42,13 @@
             </a>
           </h1>
           <div class="searchwrap">
-            <input type="text">
+            <input type="text" role="search">
             <button class="more_btn">
               <span class="blind">연관검색어</span>
             </button>
             <div class="search_btn">
               <button type="button">
-                <stron class="blind">네이버 쇼핑검색</stron>   
+                <span class="blind">네이버 쇼핑검색</span>   
               </button>
             </div>
             <button type="button" class="detail_btn">
@@ -88,7 +88,7 @@
       <div class="hd_btm">
         <div class="inner">
           <nav>
-            <ul class="menu_wrap">
+            <ul class="menu_wrap" role="navigation" aria-label="메인메뉴">
               <li class="menu">
                 <a href="#" class="menu_detail">
                   <span class="menu_in">
@@ -197,7 +197,7 @@
             </ul>
           </nav>
           <div class="artwin_search">
-            <input type="text" placeholder="아트윈도 검색">
+            <input type="text" role="search" placeholder="아트윈도 검색">
             <a class="search_icon">
               <span class="blind">아트윈도 검색</span>
             </a>
@@ -205,8 +205,8 @@
         </div><!-- .inner -->
       </div><!-- .hd_btm -->
     </header>
-    <div class="content">
-      <ul class="content_nav">
+    <div class="content" role="main">
+      <ul class="content_nav" role="navigation" aria-label="아트윈도 메뉴">
         <li class="content_nav_wrap">
           <a href="./index.html" class="content_nav_list">홈</a>
         </li>
@@ -262,7 +262,7 @@
       </div>
         <div class="visual_nav">
           <div class="inner">
-            <ul class="visual_nav_wrap">
+            <ul class="visual_nav_wrap" role="navigation" aria-label="아트윈도 작품 메뉴">
               <li class="visual_nav_menu">
                 <a href="#" class="visual_nav_menu_in">
                   <div class="thumb">

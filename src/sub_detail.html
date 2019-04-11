@@ -12,7 +12,7 @@
 <body>
   <div id="wrap">
     <header>
-      <div class="hd_top">
+      <div class="hd_top" role="banner">
         <div class="inner">
             <h2 class="naver">
               <a href="#" class="hd_top_in">
@@ -42,13 +42,15 @@
             </a>
           </h1>
           <div class="searchwrap">
-            <input type="text">
+            <input type="text" role="search">
             <button type="button" class="more_btn">
               <span class="blind">연관검색어</span>
             </button>
-            <button type="button" class="search_btn">
-              <strong class="blind">네이버 쇼핑검색</strong>   
-            </button>
+            <div type="button" class="search_btn">
+              <button type="button">
+                <span class="blind">네이버 쇼핑검색</span>   
+              </button> 
+            </div>
             <button type="button" class="detail_btn">
               <span class="blind">상세검색</span>
             </button>
@@ -86,7 +88,7 @@
       <div class="hd_btm">
         <div class="inner">
           <nav>
-            <ul class="menu_wrap">
+            <ul class="menu_wrap" role="navigation" aria-label="메인메뉴">
               <li class="menu">
                 <a href="#" class="menu_detail">
                   <span class="menu_in">
@@ -96,78 +98,106 @@
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>백화점윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">백화점윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#"  class="menu_detail">
-                  <span>아울렛윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">아울렛윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>스타일윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">스타일윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>디자이너윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">디자이너윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>뷰티윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">뷰티윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>리빙윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">리빙윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>푸드윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">푸드윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>키즈윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">키즈윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>펫윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">펫윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>플레이윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">플레이윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu on">
                 <a href="#" class="menu_detail">
-                  <span>아트윈도</span>
-                </a>
-              </li>
-              <li class="menu" >
-                <a href="#" class="menu_detail">
-                  <span>핫딜</span>
+                  <span class="menu_in">
+                    <span class="blind">아트윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>해외직구</span>
+                  <span class="menu_in">
+                    <span class="blind">핫딜</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>기획전</span>
+                  <span class="menu_in">
+                    <span class="blind">해외직구</span>
+                  </span>
+                </a>
+              </li>
+              <li class="menu">
+                <a href="#" class="menu_detail">
+                  <span class="menu_in">
+                    <span class="blind">기획전</span>
+                  </span>
                 </a>
               </li>
             </ul>
           </nav>
           <div class="artwin_search">
-            <input type="text" placeholder="아트윈도 검색">
+            <input type="text" role="search" placeholder="아트윈도 검색" >
             <a class="search_icon">
               <span class="blind">아트윈도 검색</span>
             </a>
@@ -175,7 +205,7 @@
         </div><!-- .inner -->
       </div><!-- .hd_btm -->
     </header>
-    <div class="content">
+    <div class="content" role="main">
       <div id="floating_bar_product" class="content_fix">
         <div class="content_inner">
           <div class="fix_wrap">
@@ -190,17 +220,17 @@
             </button>
           </div>
           <div class="tab_nav">
-              <div class="nav_wrap">
-                <button type="button" class="nav_list on">
+              <div class="nav_wrap" role="tablist">
+                <button type="button" role="tab" class="nav_list on">
                   <a href="#" class="tab_nav_in">상세정보</a>
                 </button>
-                <button type="button" class="nav_list">
+                <button type="button" role="tab" class="nav_list">
                   <a href="#" class="tab_nav_in">리뷰 7</a>
                 </button>
-                <button type="button" class="nav_list">
+                <button type="button" role="tab" class="nav_list">
                   <a href="#" class="tab_nav_in">Q&A 0</a>
                 </button>
-                <button type="button" class="nav_list">
+                <button type="button" role="tab" class="nav_list">
                   <a href="#" class="tab_nav_in">반품/교환정보</a>
                 </button>
               </div>
@@ -215,19 +245,19 @@
             <a href="#" class="content_header_category_in cate3">갤러리세인</a>
           </div> 
           <div class="content_header_route">
-            <a href="#" class="content_header_route_in blog">
-              <span class="blind">네이버 블로그</span>
+            <a href="#" role="button" aria-label="네이버 블로그로 공유하기" class="content_header_route_in blog">
+              <span class="blind">네이버 블로그로 공유하기</span>
             </a>
-            <a href="#" class="content_header_route_in cafe">
-              <span class="blind">네이버 카페</span>
+            <a href="#" role="button" aria-label="네이버 카페로 공유하기" class="content_header_route_in cafe">
+              <span class="blind">네이버 카페로 공유하기</span>
             </a>
-            <a href="#" class="content_header_route_in favorite">
-              <span class="blind">네이버 즐겨찾기</span>
+            <a href="#" role="button" aria-label="네이버 즐겨찾기로 추가하기" class="content_header_route_in favorite">
+              <span class="blind">네이버 즐겨찾기로 추가하기</span>
             </a>
-            <a href="#" class="content_header_route_in note">
-              <span class="blind">네이버 메모</span>
+            <a href="#" role="button" aria-label="네이버 메모에 추가하기" class="content_header_route_in note">
+              <span class="blind">네이버 메모에 추가하기</span>
             </a>
-            <a href="#" class="content_header_route_in share">
+            <a href="#" role="button" aria-label="공유하기" class="content_header_route_in share">
               <span class="blind">공유하기</span>
             </a>
           </div>
@@ -276,12 +306,12 @@
                   </strong>
                 </div>
                 <div class="delivery">
-                  <button type="button" id="select_button_delivery" class="selectbx">다른 배송방법 선택하기</button>
-                  <ul id="select_menu_delivery" class="selectbx_detail">
-                    <li class="selectbx_detail_list">
+                  <button type="button" id="select_button_delivery" class="selectbx" role="combobox">다른 배송방법 선택하기</button>
+                  <ul id="select_menu_delivery" class="selectbx_detail" role="listbox">
+                    <li class="selectbx_detail_list" role="option">
                       <a href="#" class="selectbx_detail_list_in">택배</a>
                     </li>
-                    <li class="selectbx_detail_list">
+                    <li class="selectbx_detail_list" role="option">
                       <a href="#" class="selectbx_detail_list_in">방문수령</a>
                     </li>
                   </ul>
@@ -294,12 +324,12 @@
                   </p>
                 </div>
                 <div class="option">
-                    <button type="button" id="select_button_option" class="selectbx" >액자</button>
-                    <ul id="select_menu_option" class="selectbx_detail">
-                        <li class="selectbx_detail_list">
+                    <button type="button" id="select_button_option" class="selectbx" role="combobox">액자</button>
+                    <ul id="select_menu_option" class="selectbx_detail" role="listbox">
+                        <li class="selectbx_detail_list" role="option">
                           <a href="#" class="selectbx_detail_list_in">액자(유)(+80,000원)</a>
                         </li>
-                        <li class="selectbx_detail_list">
+                        <li class="selectbx_detail_list" role="option">
                           <a href="#" class="selectbx_detail_list_in">액자(무)</a>
                         </li>
                       </ul>
@@ -350,17 +380,17 @@
         </div>
         <div class="content_information">
           <div class="tab_nav">
-            <div class="nav_wrap">
-              <button type="button" class="nav_list on">
+            <div class="nav_wrap" role="tablist">
+              <button type="button" role="tab" class="nav_list on">
                 <a href="#" class="tab_nav_in">상세정보</a>
               </button>
-              <button type="button" class="nav_list">
+              <button type="button" role="tab" class="nav_list">
                 <a href="#" class="tab_nav_in">리뷰 7</a>
               </button>
-              <button type="button" class="nav_list">
+              <button type="button" role="tab" class="nav_list">
                 <a href="#" class="tab_nav_in">Q&A 0</a>
               </button>
-              <button type="button" class="nav_list">
+              <button type="button" role="tab" class="nav_list">
                 <a href="#" class="tab_nav_in">반품/교환정보</a>
               </button>
             </div>
@@ -916,15 +946,15 @@
                       </div>
                       <span>OFF</span>
                     </div>
-                    <button type="button" id="filter_button_qna" class="buttonarea_btn filter">답변상태</button>
-                    <ul id="filter_menu_qna" class="filter_detail">
-                      <li class="filter_detail_list">
+                    <button type="button" id="filter_button_qna" class="buttonarea_btn filter" role="combobox">답변상태</button>
+                    <ul id="filter_menu_qna" class="filter_detail" role="listbox">
+                      <li class="filter_detail_list" role="option">
                         <a href="#" class="filter_detail_list_in">답변상태</a>
                       </li>
-                      <li class="filter_detail_list">
+                      <li class="filter_detail_list" role="option">
                         <a href="#" class="filter_detail_list_in">미답변</a>
                       </li>
-                      <li class="filter_detail_list">
+                      <li class="filter_detail_list" role="option">
                         <a href="#" class="filter_detail_list_in">답변완료</a>
                       </li>
                     </ul>

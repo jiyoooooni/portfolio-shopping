@@ -11,10 +11,12 @@ class CardList {
     }
 
     add (data) {
-        this.data = this.data.concat(data);
+        this.data = this.data.concat(data); // []
 
-        this.data.map(d => {
-            return $(this.template(d));
+        this.data.map(d => { // [{product1}, {product2}, ...] => [$el1, $el2, ...]
+            const type = d.type || 'default';
+
+            return $(this.template[type](d));
         }).forEach($item => {
             this.$wrap.append($item);
         });

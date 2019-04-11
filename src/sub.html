@@ -12,7 +12,7 @@
 <body>
   <div id="wrap">
     <header>
-      <div class="hd_top">
+      <div class="hd_top" role="banner">
         <div class="inner">
             <h2 class="naver">
               <a href="#" class="hd_top_in">
@@ -42,13 +42,13 @@
             </a>
           </h1>
           <div class="searchwrap">
-            <input type="text">
+            <input type="text" role="search">
             <button type="button" class="more_btn">
               <span class="blind">연관검색어</span>
             </button>
             <div class="search_btn">
               <button type="button">
-                <stron class="blind">네이버 쇼핑검색</stron>   
+                <span class="blind">네이버 쇼핑검색</span>   
               </button>
             </div>
             <button type="button" class="detail_btn">
@@ -88,86 +88,116 @@
       <div class="hd_btm">
         <div class="inner">
           <nav>
-            <ul class="menu_wrap">
+            <ul class="menu_wrap" role="navigation" aria-label="메인메뉴">
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span class="menu_in">홈</span>
+                  <span class="menu_in">
+                    <span class="blind">홈</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>백화점윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">백화점윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#"  class="menu_detail">
-                  <span>아울렛윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">아울렛윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>스타일윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">스타일윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>디자이너윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">디자이너윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>뷰티윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">뷰티윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>리빙윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">리빙윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>푸드윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">푸드윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>키즈윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">키즈윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>펫윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">펫윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>플레이윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">플레이윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu on">
                 <a href="#" class="menu_detail">
-                  <span>아트윈도</span>
+                  <span class="menu_in">
+                    <span class="blind">아트윈도</span>
+                  </span>
                 </a>
               </li>
               <li class="menu" >
                 <a href="#" class="menu_detail">
-                  <span>핫딜</span>
+                  <span class="menu_in">
+                    <span class="blind">핫딜</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>해외직구</span>
+                  <span class="menu_in">
+                    <span class="blind">해외직구</span>
+                  </span>
                 </a>
               </li>
               <li class="menu">
                 <a href="#" class="menu_detail">
-                  <span>기획전</span>
+                  <span class="menu_in">
+                    <span class="blind">기획전</span>
+                  </span>
                 </a>
               </li>
             </ul>
           </nav>
           <div class="artwin_search">
-            <input type="text" placeholder="아트윈도 검색">
+            <input type="text" role="search" placeholder="아트윈도 검색">
             <a class="search_icon">
               <span class="blind">아트윈도 검색</span>
             </a>
@@ -175,10 +205,10 @@
         </div><!-- .inner -->
       </div><!-- .hd_btm -->
     </header>
-    <div class="content">
+    <div class="content" role="main">
       <div class="content_navwrap">
         <div class="inner">
-          <ul class="content_nav">
+          <ul class="content_nav" role="navigation" aria-label="아트윈도 메뉴">
             <li class="content_nav_wrap">
               <a href="./index.html" class="content_nav_in">홈</a>
             </li>
@@ -210,7 +240,7 @@
         </div>
         <div class="visual_nav">
           <div class="inner">
-            <ul class="visual_nav_wrap">
+            <ul class="visual_nav_wrap" role="navigation" aria-label="아트윈도 작품 메뉴">
               <li class="visual_nav_menu">
                 <a href="#" class="visual_nav_menu_in">
                   <div class="thumb">
@@ -290,24 +320,24 @@
       <div class="section today">
         <div class="inner">
           <h2 class="section_title">오늘의 작품
-            <a href="#" class="on">인기순</a>
-            <ul class="filter_wrap">
-              <li class="filter_list">
+            <div href="#" id="select_button_filter" class="check" role="combobox">인기순</div>
+            <ul id="select_list_filter" class="filter_wrap" role="listbox">
+              <li class="filter_list" role="option">
                 <a href="#" class="filter_item">최신순</a>
               </li>
-              <li class="filter_list point">
+              <li class="filter_list point" role="option">
                 <a href="#" class="filter_item">인기순</a>
               </li>
-              <li class="filter_list">
+              <li class="filter_list" role="option">
                 <a href="#" class="filter_item">낮은 가격순</a>
               </li>
-              <li class="filter_list">
+              <li class="filter_list" role="option">
                 <a href="#" class="filter_item">높은 가격순</a>
               </li>
             </ul>
           </h2>
           <ul id="art_products" class="list_art">
-            <li class="item_art">
+            <!-- <li class="item_art">
               <a href="#" class="item_art_in">
                 <div class="thumb">
                   <img src="./img/today_artlist_no1.jpg" alt="꽃잔치, 이수동 이미지">
@@ -739,7 +769,7 @@
                   <span>퍼블릭갤러리</span>
                 </div>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

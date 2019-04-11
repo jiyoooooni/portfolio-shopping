@@ -1,5 +1,5 @@
 
- @media (max-width: 1365px){
+ @media (max-width: 1364px){
     .inner {
       width: 940px;
     }
@@ -30,12 +30,21 @@
         .visual {
             .view_visual {
                 .list_visual_wrap {
-                  width: 819px;
+                  
                     .list_visual {
                         .item_visual {
                         width: 819px;
                         }
                     }
+                }
+                .introduce {
+                  margin-left: -410px;
+                }
+                .prev {
+                  margin-left: -470px;
+                }
+                .next {
+                  margin-right: -469px;
                 }
             }
         }
