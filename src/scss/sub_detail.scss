@@ -30,9 +30,6 @@
           font-weight: bold;
           line-height: 45px;
           background-color: #f3f5f7;
-            .tab_nav_in {
-              display: block;
-            }
         }
         .on {
           color: #fff;
@@ -875,6 +872,7 @@
                             }
                         }
                         .review_notice_wrap {
+                          cursor: pointer;
                             .review_notice_list {
                               position: relative;
                               padding: 20px;
@@ -962,7 +960,7 @@
                                     }
                                 }
                                 .click_review_wrap {
-                                  display: block;
+                                  display: none;
                                   width: 480px;
                                   margin: 20px 0 0 35px;
                                     .click_review_list {
@@ -1038,6 +1036,9 @@
                                       display: none;
                                     }
                                 }
+                            }
+                            .check .click_review_wrap {
+                              display: block;
                             }
                         }
                     }

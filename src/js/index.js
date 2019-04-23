@@ -17,22 +17,24 @@ const bannerMap = {
     }
 };
 
-const bannerFlicking = new eg.Flicking("#banner-flicking-wrap", {
-    duration: 300,
-    circular: true,
-    defaultIndex: 0,
-    previewPadding: [139, 139]
-}).on('flickEnd', function (e) {
-    const {title, desc} = bannerMap[e.no];
-
-    $('#banner_title').html(title);
-    $('#banner_desc').html(desc);
-});
-
-$('#btn_prev_banner').on('click', function (e) {
-    bannerFlicking.prev();
-});
-
-$('#btn_next_banner').on('click', function (e) {
-    bannerFlicking.next();
-});
+$(document).ready(function() {
+    const bannerFlicking = new eg.Flicking("#banner-flicking-wrap", {
+        duration: 300,
+        circular: true,
+        defaultIndex: 0,
+        autoResize: true
+    }).on('moveEnd', function (e) {
+        const {title, desc} = bannerMap[e.index];
+    
+        $('#banner_title').html(title);
+        $('#banner_desc').html(desc);
+    });
+    
+    $('#btn_prev_banner').on('click', function (e) {
+        bannerFlicking.prev();
+    });
+    
+    $('#btn_next_banner').on('click', function (e) {
+        bannerFlicking.next();
+    });
+})

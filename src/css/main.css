@@ -217,12 +217,6 @@ header .hd_mid .category {
   padding-top: 20px;
 }
 
-header .hd_mid .category .category_in {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 header .hd_mid .category button {
   background-image: url(../img/spSv_global.png);
   background-size: 423px 400px;
@@ -734,6 +728,7 @@ footer .copyright .logo {
 
 .content .visual .view_visual .list_visual_wrap .list_visual .item_visual {
   display: inline-block;
+  width: 100%;
   height: 325px;
   vertical-align: top;
 }

@@ -21,6 +21,7 @@
     "vinyl-buffer": "^1.0.1"
   },
   "dependencies": {
+    "@egjs/flicking": "^3.0.0",
     "gulp-cli": "^2.0.1"
   }
 }
